@@ -98,7 +98,7 @@
     </header>
     <nav>
         <div class="link-item vertical-center">
-            <a href="javascript:void(0);" data-type="contact">
+            <a href="{{ route('contactUs') }}" data-type="contact">
                 {{ __('main.contact_us') }}
             </a>
         </div>

@@ -10,6 +10,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function contactUs()
+    {
+        return view('contact_us');
+    }
     public function getContent(Request $request)
     {
         switch ($request->type) {

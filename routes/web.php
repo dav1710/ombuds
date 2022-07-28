@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('locale/{language}', [LanguageController::class, 'language']);
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/contact_us', [HomeController::class, 'contactUs'])->name('contactUs');
 Route::get('/get_content', 'HomeController@getContent');

@@ -100,11 +100,11 @@
                 <p class="action_directions_icons_title">ՎԻՃԱԿԱԳՐՈՒԹՅՈՒՆ</p>
             </div>
             <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">
-                <img src="{{ asset('img/action_icons_3.png') }}" alt="action_icons_3">
+                <img src="{{ asset('img/action_icons_3.png') }}" alt="action_icons_3" style="width: 68px">
                 <p class="action_directions_icons_title">ՕՐԵՆՍԴՐԱԿԱՆ ԱՌԱՋԱՐԿՆԵՐ ԵՎ ԿԱՐԾԻՔՆԵՐ</p>
             </div>
             <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">
-                <img src="{{ asset('img/action_icons_4.png') }}" alt="action_icons_4">
+                <img src="{{ asset('img/action_icons_4.png') }}" alt="action_icons_4" style="width: 68px">
                 <p class="action_directions_icons_title">ԳՈՐԾԱՐԱՐՈՒԹՅԱՆ ՈԼՈՐՏՈՒՄ ԻՐԱՎՈՒՆՔՆԵՐԻ ՊԱՇՏՊԱՆՈՒԹՅՈՒՆ</p>
             </div>
             <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">
@@ -112,7 +112,7 @@
                 <p class="action_directions_icons_title">ՊԱՇՏՊԱՆԻՆ ԱՌԸՆԹԵՐ ԽՈՐՀՈՒՐԴՆԵՐ</p>
             </div>
             <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">
-                <img src="{{ asset('img/action_icons_6.png') }}" alt="action_icons_6">
+                <img src="{{ asset('img/action_icons_6.png') }}" alt="action_icons_6" style="width: 70px">
                 <p class="action_directions_icons_title">ՄԻՋԱԶԳԱՅԻՆ ԿՈՆՎԵՆՑԻՈՆ ԿԱՐԳԱՎԻՃԱԿՆԵՐ</p>
             </div>
             <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">

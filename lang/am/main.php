@@ -6,7 +6,7 @@ return [
     'armenian' => 'Հայերեն',
     'russian' => 'Русский',
     'english' => 'English',
-    'contact_us' => 'Դիմեք մեզ',
+    'contact_us' => 'ԴԻՄԵԼ ՊԱՇՏՊԱՆԻՆ',
     'leaflets' => 'Ձևաթղթեր',
     'links' => 'Հղումներ',
     'hot_line' => 'Թեժ գիծ',
