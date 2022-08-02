@@ -8,21 +8,6 @@
 
 @section('content')
 <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="300">
-    {{-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link custom_list_group_action" href="#section1">Դիմել Պաշտպանին</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link custom_list_group_action" href="#section2">Հաճախ տրվող հարցեր</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link custom_list_group_action" href="#section3">Հետադարձ կապ</a>
-            </li>
-          </ul>
-        </div>
-      </nav> --}}
     <div id="list-example" class="list-group container d-flex flex-row contact_us">
         <a class="list-group-item list-group-item-action custom_list_group_action active" href="#section1">Դիմել Պաշտպանին</a>
         <a class="list-group-item list-group-item-action custom_list_group_action" href="#section2">Հաճախ տրվող հարցեր</a>
@@ -92,12 +77,39 @@
                 <p>Հաճախ տրվող հարցեր</p>
             </div>
         </div>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+       <div class="contact_us_question">
+            <div class="contact_us_question_title">
+                <p>Ո՞վ է Մարդու իրավունքների պաշտպանը</p>
+            </div>
+            <div class="contact_us_question_content">
+                <p>
+                    Մարդու իրավունքների պաշտպանն անկախ պաշտոնատար անձ է, ով հետեւում է պետական եւ տեղական ինքնակառավարման մարմինների
+                    ու պաշտոնատար անձանց, իսկ Մարդու իրավունքների պաշտպանի մասին օրենքով սահմանված դեպքերում` նաեւ կազմակերպությունների
+                    կողմից մարդու իրավունքների եւ ազատությունների պահպանմանը, նպաստում է խախտված իրավունքների եւ
+                    ազատությունների վերականգնմանը, իրավունքներին ու ազատություններին առնչվող նորմատիվ իրավական ակտերի կատարելագործմանը:
+                </p>
+            </div>
+       </div>
+       <div class="contact_us_question_2">
+            <div class="contact_us_question_title">
+                <p>Արդյո՞ք հնարավոր է ազդել Պաշտպանի որոշումների վրա կամ միջամտել նրա գործունեությանը</p>
+            </div>
+            <div class="contact_us_question_content">
+                <p>
+                    Պաշտպանի գործունեությանը միջամտելը, պաշտոնատար անձանց կողմից Պաշտպանի լիազորությունների իրականացմանը խոչընդոտելը,
+                    Պաշտպանին սպառնալը, վիրավորանք հասցնելն առաջացնում են պատասխանատվություն՝ օրենքով սահմանված կարգով:
+                </p>
+            </div>
+       </div>
       </div>
 
       <div id="section3" class="container_section" style="padding:200px 0;">
-        <h1>Section 3</h1>
+        <div class="d-flex align-items-baseline contact_us_action">
+            <div class="line_2"></div>
+            <div class="contact_us_action_title">
+                <p>Հետադարձ կապ</p>
+            </div>
+        </div>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
       </div>
