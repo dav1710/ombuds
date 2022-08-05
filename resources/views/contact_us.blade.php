@@ -110,8 +110,79 @@
                 <p>Հետադարձ կապ</p>
             </div>
         </div>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <div class="contact_cards">
+            <div class="contact_card_item">
+                <div class="card_content d-flex flex-column">
+                    <div class="card_item_title">
+                        <p>Երևանի աշխատակազմ</p>
+                    </div>
+                    <div class="card_text">
+                        <p><img src="{{ asset('img/icons/work_time.png') }}" alt=""><span> Երկուշաբթի-Ուրբաթ 09։00-18։00</span></p>
+                        <p><img src="{{ asset('img/icons/position.png') }}" alt=""><span style="margin-left: 28px !important"> Պուշկինի 56ա, երևան, Հայաստան</span></p>
+                        <p> <img src="{{ asset('img/icons/email.png') }}" alt=""><span> ombuds@ombuds.am</span></p>
+                        <p>
+                            <img src="{{ asset('img/icons/phone-call.png') }}" alt="">
+                            <span> +374 10 53 76 51</span><br>
+                            <img src="{{ asset('img/icons/whatsapp.png') }}" alt="whatsapp" style="margin-left: 60px;">
+                            <img src="{{ asset('img/icons/viber.png') }}" alt="viber">
+                            (+37496116100)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_card_item">
+                <div class="card_content d-flex flex-column">
+                    <div class="card_item_title">
+                        <p>Սյունիքի մարզային ստորաբաժանում</p>
+                    </div>
+                    <div class="card_text">
+                        <p><img src="{{ asset('img/icons/work_time.png') }}" alt=""><span> Երկուշաբթի-Ուրբաթ 09։00-18։00</span></p>
+                        <p><img src="{{ asset('img/icons/position.png') }}" alt=""><span style="margin-left: 28px !important"> Պուշկինի 56ա, երևան, Հայաստան</span></p>
+                        <p> <img src="{{ asset('img/icons/email.png') }}" alt=""><span> ombuds@ombuds.am</span></p>
+                        <p><img src="{{ asset('img/icons/phone-call.png') }}" alt=""><span> +374 10 53 76 51</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_card_item">
+                <div class="card_content d-flex flex-column">
+                    <div class="card_item_title">
+                        <p>Շիրակի մարզային ստորաբաժանում</p>
+                    </div>
+                    <div class="card_text">
+                        <p><img src="{{ asset('img/icons/work_time.png') }}" alt=""><span> Երկուշաբթի-Ուրբաթ 09։00-18։00</span></p>
+                        <p><img src="{{ asset('img/icons/position.png') }}" alt=""><span style="margin-left: 28px !important"> Պուշկինի 56ա, երևան, Հայաստան</span></p>
+                        <p> <img src="{{ asset('img/icons/email.png') }}" alt=""><span> ombuds@ombuds.am</span></p>
+                        <p><img src="{{ asset('img/icons/phone-call.png') }}" alt=""><span> +374 10 53 76 51</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_card_item">
+                <div class="card_content d-flex flex-column">
+                    <div class="card_item_title">
+                        <p>Գեղարքունիքի մարզային ստորաբաժանում</p>
+                    </div>
+                    <div class="card_text">
+                        <p><img src="{{ asset('img/icons/work_time.png') }}" alt=""><span> Երկուշաբթի-Ուրբաթ 09։00-18։00</span></p>
+                        <p><img src="{{ asset('img/icons/position.png') }}" alt=""><span style="margin-left: 28px !important"> Պուշկինի 56ա, երևան, Հայաստան</span></p>
+                        <p> <img src="{{ asset('img/icons/email.png') }}" alt=""><span> ombuds@ombuds.am</span></p>
+                        <p><img src="{{ asset('img/icons/phone-call.png') }}" alt=""><span> +374 10 53 76 51</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_card_item">
+                <div class="card_content d-flex flex-column">
+                    <div class="card_item_title">
+                        <p>Տավուշի մարզային ստորաբաժանում</p>
+                    </div>
+                    <div class="card_text">
+                        <p><img src="{{ asset('img/icons/work_time.png') }}" alt=""><span> Երկուշաբթի-Ուրբաթ 09։00-18։00</span></p>
+                        <p><img src="{{ asset('img/icons/position.png') }}" alt=""><span style="margin-left: 28px !important"> Պուշկինի 56ա, երևան, Հայաստան</span></p>
+                        <p> <img src="{{ asset('img/icons/email.png') }}" alt=""><span> ombuds@ombuds.am</span></p>
+                        <p><img src="{{ asset('img/icons/phone-call.png') }}" alt=""><span> +374 10 53 76 51</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
 
 </div>

@@ -900,3 +900,41 @@ input[type="file"] {
     padding: 48px 0 0 0;
     width: 80%;
 }
+.contact_cards{
+    width: 74%;
+    margin: 38px 6%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 34px;
+}
+.contact_cards div{
+    padding: 15px 0;
+}
+.contact_card_item{
+    width: 410px;
+    background: #697C94;
+    border-radius: 14px;
+}
+.card_item_title p{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.card_text p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.card_content{
+    align-items: center;
+}
+.card_item_title{
+    text-align: center;
+    height: 73px;
+}
+.card_text span{
+    margin-left: 20px;
+}
+
