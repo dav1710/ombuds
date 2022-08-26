@@ -2,6 +2,10 @@ var player = document.getElementById("player");
 let progress = document.getElementById("progress");
 let playbtn = document.getElementById("playbtn");
 
+$(".play_audio").click(function() {
+    player.play();
+});
+
 var playpause = function () {
   if (player.paused) {
     player.play();

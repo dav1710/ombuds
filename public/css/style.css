@@ -60,7 +60,7 @@
 
 html,
 body {
-    background: #e5f2ef;
+    background: #E6E6E6 !important;
 }
 
 html,
@@ -494,6 +494,9 @@ footer {
 }
 .home_news{
     margin-bottom: 87px;
+}
+.active_nav{
+    color: #6D6D6D !important;
 }
 .home_news_1_1{
     background-image: url(../img/news.png);
@@ -979,7 +982,7 @@ input[type="file"] {
 		float: left;
 		margin-left: 10px;
 		width: 60px;
-		height: 60px;
+		height: 54px;
 		cursor: pointer;
 }
 
@@ -988,8 +991,8 @@ input[type="file"] {
 .burger span:after {
 		position: absolute;
 		top: 25px;
-		width: 40px;
-		height: 4px;
+		width: 27px;
+		height: 3px;
 		background: #333;
 		border-radius: 0.2em;
 }
@@ -1003,12 +1006,12 @@ input[type="file"] {
 
 /* Top bar position */
 .burger span:before {
-		top: -8px;
+		top: -7px;
 }
 
 /* Bottom bar position */
 .burger span:after {
-		top: 8px;
+		top: 7px;
 }
 
 /* Get rid of more on action (IE9 or higher) */
@@ -1025,7 +1028,7 @@ input[type="file"] {
 /* Moves the top and bottom bars to the middle on action (IE9 or higher) */
 .burger-check:checked + .burger span:before,
 .burger-check:checked + .burger span:after {
-		top: 6px;
+		top: 0;
 }
 
 /* Rotates the top bar on action with full browser support (IE9 or higher) */
@@ -1096,14 +1099,6 @@ span.boo {
         align-items: center;
 }
 
-.a-header ul a:hover,
-.a-header ul a:active,
-.a-header ul a:focus,
-.a-header ul a:visited {
-		text-decoration: none;
-		background: #fff;
-		border-bottom-color: #08c;
-}
 
 /* Animate height of 'a' element in order to reveal the menu on check (IE9 or higher) */
 #main-nav:checked ~ ul a {
@@ -1131,7 +1126,7 @@ span.boo {
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
-
+    display: flex;
     color: #505050;
 }
 .big_list_tab{
@@ -1201,3 +1196,115 @@ span.boo {
     height: 100%;
 }
 
+.reports{
+    background: transparent !important;
+    margin-top: 37px;
+    margin-right: 10%;
+    margin-left: 10% !important;
+    border: none !important;
+    z-index: 2;
+}
+.nav-item{
+    margin-bottom: 20px;
+}
+.container_section_reports{
+    margin-left: 8%;
+    padding-top: 34px;
+    margin-bottom: 60px;
+}
+.report_card{
+    background: #D9D9D9;
+    box-shadow: 5px 5px 4px rgba(120, 120, 120, 0.15);
+    border-radius: 21px;
+    margin-bottom: 35px;
+    padding: 29px 21px 29px 21px;
+    align-items: center;
+}
+.reports_card_img{
+    margin-right: 29px;
+}
+.reports_card_text{
+    font-style: normal;
+    font-weight: 350;
+    font-size: 27px;
+    line-height: 36px;
+    color: #363636;
+}
+.report_pdf{
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    line-height: 40px !important;
+    display: flex !important;
+    color: #505050 !important;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.report_pdf img{
+    margin-right: 50px;
+}
+.report_pdf_news{
+    margin-bottom: 0 !important;
+}
+.report_news{
+    margin-bottom: 55px;
+}
+.report_news_text{
+    margin-left: 116px;
+}
+.report_news_time p{
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 25px;
+    color: #505050;
+}
+.report_news_time{
+    margin-top: 12px;
+}
+.report_news_content{
+    font-weight: 350;
+    font-size: 30px;
+    line-height: 40px;
+    color: #505050;
+}
+.course_card{
+    border: none !important;
+    background-color: transparent !important;
+}
+.course_text{
+    font-weight: 350 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    color: #505050 !important;
+}
+.course_body{
+    margin: 0 19px !important;
+    background: #F4F4F4 !important;
+    border-radius: 10px !important;
+    height: 80px !important;
+}
+.cooperation_body_top{
+    background: #F4F4F4 !important;
+    border-radius: 5px 5px 0px 0px !important;
+    height: 72px !important;
+    margin: 0 5px 0 2px;
+}
+
+.cooperation_card img {
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -2px;
+}
+.cooperation_body_bottom{
+    background: #DEDEDE !important;
+    border-radius: 0px 0px 7px 7px !important;
+    height: 235px !important;
+}
+.cooperation_card_bottom img{
+    border-radius: 7px 7px 0px 0px;
+}
+.cooperation_text{
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    color: #505050 !important;
+}

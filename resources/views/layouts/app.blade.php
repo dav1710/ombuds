@@ -8,6 +8,7 @@
     <link href="{{ asset('css/style.css?v=' . date('YmdHis')) }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/preloader.css?v=' . date('YmdHis')) }}">
     <link rel="stylesheet" href="{{ asset('css/leaflet.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
     @if(app()->getLocale() === 'ru' || app()->getLocale() === 'en')
         <style>
@@ -23,7 +24,7 @@
 
     @yield('styles')
 
-    <title>{{ $title ?? 'ombuds.am' }}</title>
+    <title>@yield('title')</title>
 </head>
 <body>
     {{-- @include('components.preloader') --}}
@@ -98,22 +99,22 @@
     </header>
     <nav>
         <div class="link-item vertical-center">
-            <a href="{{ route('contactUs') }}" data-type="contact">
+            <a class="nav_link {{ Request::is('contact_us') ? 'active_nav' : '' }}" href="{{ route('contactUs') }}" data-type="contact">
                 {{ __('main.contact_us') }}
             </a>
         </div>
         <div class="link-item vertical-center">
-            <a href="{{ route('directions') }}" data-type="contact">
+            <a class="nav_link {{ Request::is('directions') ? 'active_nav' : '' }}" href="{{ route('directions') }}" data-type="contact">
                 ԱՇԽԱՏԱՆՔԻ ՈՒՂՂՈՒԹՅՈՒՆՆԵՐ
             </a>
         </div>
         <div class="link-item vertical-center">
-            <a href="{{ route('reports') }}" data-type="contact">
+            <a class="nav_link {{ Request::is('reports') ? 'active_nav' : '' }}" href="{{ route('reports') }}" data-type="contact">
                 ՀԱՂՈՐԴՈՒՄՆԵՐ և ԶԵԿՈՒՅՑՆԵՐ
             </a>
         </div>
         <div class="link-item vertical-center">
-            <a href="{{ route('directions') }}" data-type="contact">
+            <a class="nav_link {{ Request::is('courses') ? 'active_nav' : '' }}" href="{{ route('courses') }}" data-type="contact">
                 ԿՐԹՈՒԹՅՈՒՆ և ԻՐԱԶԵԿՈՒՄ
             </a>
         </div>
@@ -122,9 +123,9 @@
             <input type="checkbox" name="main-nav" id="main-nav" class="burger-check">
             <label for="main-nav" class="burger menu"><span></span></label>
             <ul>
-                    <li><a href="#">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</a></li>
-                    <li><a href="#" class="active">ՄԵԴԻԱ ԿԵՆՏՐՈՆ</a></li>
-                    <li><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
+                    <li><a class="{{ Request::is('cooperation') ? 'active_nav' : '' }}" href="{{ route('cooperation') }}">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</a></li>
+                    <li><a class="{{ Request::is('media') ? 'active_nav' : '' }}" href="{{ route('media') }}" class="active">ՄԵԴԻԱ ԿԵՆՏՐՈՆ</a></li>
+                    <li><a class="{{ Request::is('about') ? 'active_nav' : '' }}" href="{{ route('about') }}">ՄԵՐ ՄԱՍԻՆ</a></li>
             </ul>
         </div>
         @endif
@@ -212,6 +213,12 @@
         </div>
     </footer>
 
+
+
+    <script src="{{ asset('js/jquery.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/popper.min.js')}}" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/bootstrap.min.js')}}" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js?v=' . date('YmdHis')) }}"></script>
     <script src="{{ asset('js/main.js')}}"></script>
     @yield('scripts')

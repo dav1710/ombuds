@@ -22,6 +22,22 @@ class HomeController extends Controller
     {
         return view('reports');
     }
+    public function courses()
+    {
+        return view('courses');
+    }
+    public function cooperation()
+    {
+        return view('cooperation');
+    }
+    public function media()
+    {
+        return view('media');
+    }
+    public function about()
+    {
+        return view('about');
+    }
     public function getContent(Request $request)
     {
         switch ($request->type) {
