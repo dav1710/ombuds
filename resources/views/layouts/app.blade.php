@@ -103,20 +103,31 @@
             </a>
         </div>
         <div class="link-item vertical-center">
-            <a href="javascript:void(0);" data-type="contact">
+            <a href="{{ route('directions') }}" data-type="contact">
                 ԱՇԽԱՏԱՆՔԻ ՈՒՂՂՈՒԹՅՈՒՆՆԵՐ
             </a>
         </div>
         <div class="link-item vertical-center">
-            <a href="javascript:void(0);" data-type="contact">
+            <a href="{{ route('reports') }}" data-type="contact">
                 ՀԱՂՈՐԴՈՒՄՆԵՐ և ԶԵԿՈՒՅՑՆԵՐ
             </a>
         </div>
         <div class="link-item vertical-center">
-            <a href="javascript:void(0);" data-type="contact">
+            <a href="{{ route('directions') }}" data-type="contact">
                 ԿՐԹՈՒԹՅՈՒՆ և ԻՐԱԶԵԿՈՒՄ
             </a>
         </div>
+        @if (Route::current()->getName() != 'home')
+        <div class="a-header">
+            <input type="checkbox" name="main-nav" id="main-nav" class="burger-check">
+            <label for="main-nav" class="burger menu"><span></span></label>
+            <ul>
+                    <li><a href="#">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</a></li>
+                    <li><a href="#" class="active">ՄԵԴԻԱ ԿԵՆՏՐՈՆ</a></li>
+                    <li><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
+            </ul>
+        </div>
+        @endif
     </nav>
 
     <div id="content-block">
@@ -202,6 +213,7 @@
     </footer>
 
     <script src="{{ asset('js/app.js?v=' . date('YmdHis')) }}"></script>
+    <script src="{{ asset('js/main.js')}}"></script>
     @yield('scripts')
 </body>
 </html>

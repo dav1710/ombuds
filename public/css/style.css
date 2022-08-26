@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 * {
-    font-family: arm-font;
+    font-family: 'Segoe UI';
     box-sizing: content-box !important;
 }
 
@@ -626,9 +626,12 @@ footer {
     margin: 0 !important;
 }
 .contact_us{
+    background: transparent !important;
     margin-top: 37px;
     margin-left: 15% !important;
     position: fixed;
+    border: none !important;
+    z-index: 2;
 }
 .custom_list_group_action{
     display: flex !important;
@@ -645,8 +648,9 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-.list-group-item.active{
+.custom_list_group_action.active{
     background: rgba(109, 120, 138, 0.56) !important;
+    transition: 0.7s;
 }
 .line_2{
     width: 59px;
@@ -663,6 +667,8 @@ footer {
 }
 .container_section{
     margin-left: 8%;
+    padding-top: 150px;
+    margin-bottom: 60px;
 }
 .apply_contact_us{
     width: 74%;
@@ -936,5 +942,262 @@ input[type="file"] {
 }
 .card_text span{
     margin-left: 20px;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+*,
+*:before,
+*:after {
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		box-sizing: border-box;
+}
+
+/*==============================================================================
+ The burger icon with it's animation. Uses the checked property of a checkbox
+ in order to make the animation happen as well as control the next elements
+ I've used classes because of the + css selector, which will only ever animate
+ the next label element. Does not work on IE8 or below and opera mini since
+ they don't support the :checked selector.
+==============================================================================*/
+.burger-check {
+		display: none;
+}
+
+/*--------------------------------------
+ Sets the actionable area for the burger
+ including a label for usability
+--------------------------------------*/
+.burger {
+		position: relative;
+		float: left;
+		margin-left: 10px;
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+}
+
+.burger span,
+.burger span:before,
+.burger span:after {
+		position: absolute;
+		top: 25px;
+		width: 40px;
+		height: 4px;
+		background: #333;
+		border-radius: 0.2em;
+}
+
+/* Reset the left and create the pseudo-element */
+.burger span:before,
+.burger span:after {
+		content: '';
+		left: 0;
+}
+
+/* Top bar position */
+.burger span:before {
+		top: -8px;
+}
+
+/* Bottom bar position */
+.burger span:after {
+		top: 8px;
+}
+
+/* Get rid of more on action (IE9 or higher) */
+.burger-check:checked + .burger:after {
+		content: '';
+}
+/* Get rid of the middle bar on action (IE9 or higher) */
+
+.burger-check:checked + .burger span {
+		height: 0;
+		width: 0;
+}
+
+/* Moves the top and bottom bars to the middle on action (IE9 or higher) */
+.burger-check:checked + .burger span:before,
+.burger-check:checked + .burger span:after {
+		top: 6px;
+}
+
+/* Rotates the top bar on action with full browser support (IE9 or higher) */
+.burger-check:checked + .burger span:before {
+		-webkit-transform: rotate(225deg);
+		-ms-transform: rotate(225deg);
+		transform: rotate(225deg);
+}
+
+/* Rotates the bottom bar on action with full browser support (IE9 or higher) */
+.burger-check:checked + .burger span:after {
+		-webkit-transform: rotate(-225deg);
+		-ms-transform: rotate(225deg);
+		transform: rotate(-225deg);
+}
+
+/*==============================================================================
+ Simple reveal (IE9 or higher)
+==============================================================================*/
+span.boo {
+		width: auto;
+		margin-top: 0;
+		line-height: 60px;
+		height: 0;
+		overflow: hidden;
+}
+
+/* Reveals Boo! (IE9 or higher) */
+#main-nav-test:checked ~ .boo {
+		height: 50px;
+}
+
+/*==============================================================================
+ Simple mobile menu opening and closing (IE9 or higher)
+==============================================================================*/
+.a-header {
+		position: relative;
+		float: left;
+		margin-top: auto;
+		min-height: 50px;
+		overflow: hidden;
+}
+
+.a-header ul {
+		position: fixed;
+		width: 30%;
+        filter: drop-shadow(5px 5px 4px rgba(131, 131, 131, 0.25));
+        background: rgba(238, 238, 238, 0.85);
+		list-style: none;
+        right: 0;
+		margin-top: 58px;
+		padding: 0 58px;
+}
+
+.a-header ul a {
+		position: relative;
+        display: flex;
+		float: left;
+		width: 100%;
+		height: 0;
+		line-height: 50px;
+		padding: 0 15px;
+		text-decoration: none;
+		overflow: hidden;
+		color: #333;
+		text-align: left;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+.a-header ul a:hover,
+.a-header ul a:active,
+.a-header ul a:focus,
+.a-header ul a:visited {
+		text-decoration: none;
+		background: #fff;
+		border-bottom-color: #08c;
+}
+
+/* Animate height of 'a' element in order to reveal the menu on check (IE9 or higher) */
+#main-nav:checked ~ ul a {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #343434;
+		height: 50px;
+}
+.directions_applications{
+    width: 74%;
+    margin: 0 6%;
+}
+.directions_applications p{
+    font-weight: 350;
+    font-size: 33px;
+    line-height: 49px;
+    color: #505050;
+}
+.directions_applications a{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #505050;
+}
+.big_list_tab{
+    width: 95% !important;
+}
+
+.player {
+    width: 74%;
+    height: 63px;
+    margin-bottom: 22px;
+    background-color: #CFCFCF;
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-gap: 16px;
+    padding: 0 24px;
+    position: relative;
+    border-radius: 11px;
+}
+
+.control,#current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playbtn {
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: transparent;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+
+#current {
+    text-align: right;
+    color: white;
+}
+
+.bar {
+    --space: -4px;
+    background-color: #24242424;
+    overflow: hidden;
+    height: 17px;
+    left: 75px;
+    right: 70px;
+    position: absolute;
+    border-radius: 11px;
+}
+
+#progress {
+    display: blcok;
+    width: var(--progress,0%);
+    background-color: #697C94;
+    transition: all 1s linear;
+    height: 100%;
 }
 

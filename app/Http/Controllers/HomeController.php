@@ -14,6 +14,14 @@ class HomeController extends Controller
     {
         return view('contact_us');
     }
+    public function directions()
+    {
+        return view('directions');
+    }
+    public function reports()
+    {
+        return view('reports');
+    }
     public function getContent(Request $request)
     {
         switch ($request->type) {
