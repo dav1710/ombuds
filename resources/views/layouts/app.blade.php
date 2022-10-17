@@ -105,17 +105,17 @@
         </div>
         <div class="link-item vertical-center">
             <a class="nav_link {{ Request::is('directions') ? 'active_nav' : '' }}" href="{{ route('directions') }}" data-type="contact">
-                ԱՇԽԱՏԱՆՔԻ ՈՒՂՂՈՒԹՅՈՒՆՆԵՐ
+                ԱՇԽԱՏԱՆՔԻ ՈւՂՂՈւԹՅՈւՆՆԵՐ
             </a>
         </div>
         <div class="link-item vertical-center">
             <a class="nav_link {{ Request::is('reports') ? 'active_nav' : '' }}" href="{{ route('reports') }}" data-type="contact">
-                ՀԱՂՈՐԴՈՒՄՆԵՐ և ԶԵԿՈՒՅՑՆԵՐ
+                ՀԱՂՈՐԴՈւՄՆԵՐ և ԶԵԿՈւՅՑՆԵՐ
             </a>
         </div>
         <div class="link-item vertical-center">
             <a class="nav_link {{ Request::is('courses') ? 'active_nav' : '' }}" href="{{ route('courses') }}" data-type="contact">
-                ԿՐԹՈՒԹՅՈՒՆ և ԻՐԱԶԵԿՈՒՄ
+                ԿՐԹՈւԹՅՈւՆ և ԻՐԱԶԵԿՈւՄ
             </a>
         </div>
         @if (Route::current()->getName() != 'home')
@@ -123,7 +123,7 @@
             <input type="checkbox" name="main-nav" id="main-nav" class="burger-check">
             <label for="main-nav" class="burger menu"><span></span></label>
             <ul>
-                    <li><a class="{{ Request::is('cooperation') ? 'active_nav' : '' }}" href="{{ route('cooperation') }}">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</a></li>
+                    <li><a class="{{ Request::is('cooperation') ? 'active_nav' : '' }}" href="{{ route('cooperation') }}">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈւԹՅՈւՆ</a></li>
                     <li><a class="{{ Request::is('media') ? 'active_nav' : '' }}" href="{{ route('media') }}" class="active">ՄԵԴԻԱ ԿԵՆՏՐՈՆ</a></li>
                     <li><a class="{{ Request::is('about') ? 'active_nav' : '' }}" href="{{ route('about') }}">ՄԵՐ ՄԱՍԻՆ</a></li>
             </ul>

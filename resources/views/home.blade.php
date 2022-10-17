@@ -13,21 +13,21 @@
           <div class="carousel-item active">
             <img src="{{ asset('img/Slider.png') }}" class="d-block w-100" alt="...">
             <div class="carousel_title carousel-caption d-none d-md-block">
-              <h5>#againstviolance: Awarness raising</h5>
+              <h5>#againstviolance: Awarness raising 1</h5>
               <h5>#դարձիր_օրինակ</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="{{ asset('img/Slider.png') }}" class="d-block w-100" alt="...">
             <div class="carousel_title carousel-caption d-none d-md-block">
-                <h5>#againstviolance: Awarness raising</h5>
+                <h5>#againstviolance: Awarness raising 2</h5>
                 <h5>#դարձիր_օրինակ</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="{{ asset('img/Slider.png') }}" class="d-block w-100" alt="...">
             <div class="carousel_title carousel-caption d-none d-md-block">
-                <h5>#againstviolance: Awarness raising</h5>
+                <h5>#againstviolance: Awarness raising 3</h5>
                 <h5>#դարձիր_օրինակ</h5>
             </div>
           </div>
@@ -44,7 +44,7 @@
                 <a href="!#" class="nav-link">ՄԵՐ ՄԱՍԻՆ</a>
             </div>
       </div>
-      <div class="container d-flex justify-content-between home_news">
+      <div class="container d-flex home_news">
             <div class="home_news_1 d-flex align-items-center">
                 <div class="home_news_1_1"></div>
                 <div class="home_news_1_2">
@@ -56,7 +56,7 @@
                 <div class="home_news_2_2">
                     <a href="!#" class="link">ՀԱՋՈՂՎԱԾ ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a>
                 </div>
-            </div>
+            </div> 
       </div>
       <div class="d-flex align-items-baseline home_action">
             <div class="line"></div>
@@ -114,6 +114,10 @@
             <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">
                 <img src="{{ asset('img/action_icons_7.png') }}" alt="action_icons_7">
                 <p class="action_directions_icons_title">ՏԵՂԵԿԱՏՎՈՒԹՅԱՆ ՀԱՍԱՆԵԼԻՈՒԹՅՈՒՆ</p>
+            </div>
+            <div class="d-flex flex-column justify-content-evenly action_directions_icons_card">
+                <img src="{{ asset('img/action_icons_7.png') }}" alt="action_icons_7">
+                <p class="action_directions_icons_title">ՄԻՊԻ ՈՐՈՇՈւՄՆԵՐ</p>
             </div>
        </div>
    </div>
