@@ -35,28 +35,28 @@
       </div>
       <div class="container-fluid home_page_nav">
             <div class="home_nav_link">
-                <a href="!#" class="nav-link">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</a>
+                <a href="{{ route('cooperation') }}" class="nav-link">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</a>
             </div>
             <div class="home_nav_link">
-                <a href="!#" class="nav-link">ՄԵԴԻԱԿԵՆՏՐՈՆ</a>
+                <a href="{{ route('media') }}" class="nav-link">ՄԵԴԻԱԿԵՆՏՐՈՆ</a>
             </div>
             <div class="home_nav_link">
-                <a href="!#" class="nav-link">ՄԵՐ ՄԱՍԻՆ</a>
+                <a href="{{ route('cooperation') }}" class="nav-link">ՄԵՐ ՄԱՍԻՆ</a>
             </div>
       </div>
       <div class="container d-flex home_news">
             <div class="home_news_1 d-flex align-items-center">
                 <div class="home_news_1_1"></div>
                 <div class="home_news_1_2">
-                    <a href="!#" class="link">ՆՈՐՈՒԹՅՈՒՆՆԵՐ</a>
+                    <a href="{{ route('media') }}" class="link">ՆՈՐՈՒԹՅՈՒՆՆԵՐ</a>
                 </div>
             </div>
             <div class="home_news_2 d-flex align-items-center">
                 <div class="home_news_2_1"></div>
                 <div class="home_news_2_2">
-                    <a href="!#" class="link">ՀԱՋՈՂՎԱԾ ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a>
+                    <a href="{{ route('media') }}" class="link">ՀԱՋՈՂՎԱԾ ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a>
                 </div>
-            </div> 
+            </div>
       </div>
       <div class="d-flex align-items-baseline home_action">
             <div class="line"></div>

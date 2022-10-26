@@ -7,7 +7,7 @@
 
 @section('content')
 <div class="scroll_header">
-    <ul class="nav nav-tabs d-flex flex-row justify-content-between scroll_nav reports" id="myTab" role="tablist">
+    <ul class="nav nav-tabs d-flex flex-row justify-content-center scroll_nav about_us" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1" type="button" role="tab" aria-controls="section1" aria-selected="true">Տարեկան զեկույցներ</button>
         </li>

@@ -257,7 +257,7 @@ header {
     color: white;
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 21px;
     line-height: 33px;
 }
 #search-form a img {
@@ -290,6 +290,11 @@ nav .link-item a {
 
 
     color: #343434;
+    transition: 0.4s;
+}
+nav .link-item a:hover{
+    font-size: 21px;
+    opacity: 0.8;
 }
 nav .link-item {
     position: relative;
@@ -473,7 +478,7 @@ footer {
 .carousel_title h5{
     font-style: normal !important;
     font-weight: 600 !important;
-    font-size: 28px !important;
+    font-size: 1.2vw !important;
     line-height: 37px !important;
     text-align: left;
     padding: 10px 0px 0 45px;
@@ -531,20 +536,28 @@ footer {
     margin-left: 40px;
     color: #576A82;
 }
+.home_news_2_2 a:hover{
+    color: #576A82 !important;
+    opacity: 0.8;
+}
+.home_news_1_2 a:hover{
+    color: #576A82 !important;
+    opacity: 0.8;
+}
 .home_action{
     margin-left: 200px;
     margin-bottom: 60px;
 }
 .line{
-    width: 85px;
-    height: 15px;
+    width: 58px;
+    height: 11px;
     background: #30414B;
     border-radius: 3px;
 }
 .home_action_title p{
     margin-left: 42px;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 43px;
     color: #30414B;
 }
@@ -645,13 +658,13 @@ footer {
 }
 .custom_list_group_action{
     display: flex !important;
-    width: 339px !important;
-    height: 68px !important;
+    width: 295px !important;
+    height: 60px !important;
     border: none !important;
     background: rgba(109, 120, 138, 0.85) !important;
     border-radius: 12px !important;
     font-weight: 350 !important;
-    font-size: 30px !important;
+    font-size: 26px !important;
     line-height: 40px !important;
     color: #FFFFFF !important;
     margin-right: 6%;
@@ -663,16 +676,16 @@ footer {
     transition: 0.7s;
 }
 .line_2{
-    width: 59px;
+    width: 49px;
     height: 10px;
     background: #30414B;
     border-radius: 3px;
 }
 .contact_us_action_title p{
-    margin-left: 30px;
+    margin-left: 20px;
     font-weight: 400;
-    font-size: 37px;
-    line-height: 49px;
+    font-size: 28px;
+    line-height: 43px;
     color: #30414B;
 }
 .container_section{
@@ -711,7 +724,7 @@ footer {
 }
 .apply_contact_us_item p{
     font-weight: 400;
-    font-size: 29px;
+    font-size: 26px;
     line-height: 39px;
     color: #30414B;
     text-align: left;
@@ -739,8 +752,8 @@ footer {
 .apply_not_id_title{
     width: 40%;
     font-weight: 400;
-    font-size: 29px;
-    line-height: 39px;
+    font-size: 26px;
+    line-height: 55px;
     padding: 50px 0 0 25px;
     color: #30414B;
 }
@@ -888,14 +901,14 @@ input[type="file"] {
 }
 .contact_us_question_title p{
     font-weight: 400;
-    font-size: 29.5px;
+    font-size: 27.5px;
     line-height: 39px;
     letter-spacing: 0.01em;
     color: #232323;
 }
 .contact_us_question_content p{
     font-weight: 400;
-    font-size: 29.5px;
+    font-size: 27.5px;
     line-height: 39px;
     letter-spacing: 0.01em;
     color: #232323;
@@ -953,7 +966,9 @@ input[type="file"] {
 .card_text span{
     margin-left: 20px;
 }
-
+#location-image{
+    margin-left: 5px;
+}
 @media
 (prefers-reduced-motion: no-preference) {
   html {
@@ -1081,12 +1096,12 @@ span.boo {
 
 .a-header ul {
 		position: fixed;
-		width: 30%;
+		width: 23%;
         filter: drop-shadow(5px 5px 4px rgba(131, 131, 131, 0.25));
         background: rgba(238, 238, 238, 0.85);
 		list-style: none;
         right: 0;
-		margin-top: 58px;
+		margin-top: 55px;
 		padding: 0 58px;
 }
 
@@ -1110,14 +1125,19 @@ span.boo {
 /* Animate height of 'a' element in order to reveal the menu on check (IE9 or higher) */
 #main-nav:checked ~ ul a {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 35px;
     /* identical to box height */
 
     text-align: right;
 
     color: #343434;
-		height: 50px;
+	height: 50px;
+    transition: 0.4s;
+}
+#main-nav:checked ~ ul a:hover{
+    opacity: 0.8;
+    font-size: 21px;
 }
 .directions_applications{
     width: 74%;
@@ -1216,7 +1236,7 @@ span.boo {
 }
 .container_section_reports{
     margin-left: 8%;
-    padding-top: 34px;
+    padding-top: 2%;
     margin-bottom: 60px;
 }
 .report_card{
@@ -1233,13 +1253,13 @@ span.boo {
 .reports_card_text{
     font-style: normal;
     font-weight: 350;
-    font-size: 27px;
+    font-size: 25px;
     line-height: 36px;
     color: #363636;
 }
 .report_pdf{
     font-weight: 600 !important;
-    font-size: 30px !important;
+    font-size: 24px !important;
     line-height: 40px !important;
     display: flex !important;
     color: #505050 !important;
@@ -1435,10 +1455,49 @@ input[type="date"] {
   }
 
 
+.about_us{
+    max-width: fit-content !important;
+    background: transparent !important;
+    margin-top: 2% !important;
+    border: none !important;
+    z-index: 2;
+}
+.about_us .nav-item{
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+.about_as_small .nav-item{
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+.about_as_small .nav-item .nav-link{
+    height: 40px !important;
+    color: #777777 !important;
+    background: rgba(232, 232, 232, 0.56) !important;
+    box-shadow: 5px 5px 4px rgba(131, 131, 131, 0.25) !important;
+    border-radius: 12px !important;
+}
+.about_as_small .nav-item .nav-link.active{
+    background: rgba(217, 217, 217, 0.56) !important;
+}
+.about_us .nav-item .custom_list_group_action{
+    height: 55px !important;
+    font-size: 26px !important;
+}
+.about_us .nav-item .big_list_tab{
+    height: 55px !important;
+    font-size: 26px !important;
+}
+.container_section_about_us{
+    margin-left: 8%;
+    padding-top: 11%;
+    margin-bottom: 60px;
+}
 
-
-
-
+.directions_applications_small{
+    width: 74%;
+    margin: 0 2%;
+}
 
 
 

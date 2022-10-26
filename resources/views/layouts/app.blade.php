@@ -166,7 +166,7 @@
                     </div>
                     <div class="left-block-item" id="location-block">
                         <img src="{{ asset('img/icons/location.png') }}" class="vertical-center" id="location-image">
-                        <span class="vertical-center" style="margin-left: 33px;">Պուշկին փ․56ա, Երևան</span>
+                        <span class="vertical-center" style="margin-left: 27px;">Պուշկին փ․56ա, Երևան</span>
                     </div>
                 </div>
                 <div id="right-block">

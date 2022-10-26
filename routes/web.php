@@ -26,4 +26,4 @@ Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
 Route::get('/cooperation', [HomeController::class, 'cooperation'])->name('cooperation');
 Route::get('/media', [NewsController::class, 'media'])->name('media');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::post('/media', [NewsController::class, 'search'])->name('media_search');
+// Route::post('/media', [NewsController::class, 'search'])->name('media_search');

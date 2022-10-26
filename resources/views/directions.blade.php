@@ -1,11 +1,6 @@
 @extends('layouts.app')
 @section('styles')
-    <link
-    rel="stylesheet"
-    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-    crossorigin="anonymous"
-  />
+<link rel="stylesheet" href="{{ asset('css/font_awesome/all.min.css') }}" crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endsection
 @section('title') Direction @endsection
 
@@ -103,4 +98,5 @@
 
 @section('scripts')
   <script src="{{ asset('js/player.js') }}"></script>
+  <script src="{{ asset('js/font_awesome/all.min.js') }}"></script>
 @endsection
