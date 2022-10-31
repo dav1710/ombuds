@@ -1159,8 +1159,146 @@ span.boo {
 .big_list_tab{
     width: 95% !important;
 }
-
-.player {
+.holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.holder .get-it-on-github {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: 'Roboto';
+    color: #55606e;
+}
+.audio.green-audio-player {
+    width: 70%;
+    min-width: 60%;
+    height: 56px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #CFCFCF;
+}
+.audio.green-audio-player .play-pause-btn {
+    display: none;
+    cursor: pointer;
+}
+.audio.green-audio-player .spinner {
+    width: 18px;
+    height: 18px;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/loading.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: spin 0.4s linear infinite;
+}
+.audio.green-audio-player .slider {
+    flex-grow: 1;
+    background-color: #d8d8d8;
+    cursor: pointer;
+    position: relative;
+}
+.audio.green-audio-player .slider .progress {
+    background-color: #697C94;
+    border-radius: inherit;
+    position: absolute;
+    pointer-events: none;
+}
+.audio.green-audio-player .slider .progress .pin {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #697C94;
+    position: absolute;
+    pointer-events: all;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+}
+.audio.green-audio-player .controls {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #55606e;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.audio.green-audio-player .controls .slider {
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 2px;
+    height: 4px;
+}
+.audio.green-audio-player .controls .slider .progress {
+    width: 0;
+    height: 100%;
+}
+.audio.green-audio-player .controls .slider .progress .pin {
+    right: -8px;
+    top: -6px;
+}
+.audio.green-audio-player .controls span {
+    cursor: default;
+}
+.audio.green-audio-player .volume {
+    position: relative;
+}
+.audio.green-audio-player .volume .volume-btn {
+    cursor: pointer;
+}
+.audio.green-audio-player .volume .volume-btn.open path {
+    fill: #697C94;
+}
+.audio.green-audio-player .volume .volume-controls {
+    width: 30px;
+    height: 135px;
+    background-color: rgba(0, 0, 0, 0.62);
+    border-radius: 7px;
+    position: absolute;
+    left: -3px;
+    bottom: 52px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.audio.green-audio-player .volume .volume-controls.hidden {
+    display: none;
+}
+.audio.green-audio-player .volume .volume-controls .slider {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 6px;
+    border-radius: 3px;
+}
+.audio.green-audio-player .volume .volume-controls .slider .progress {
+    bottom: 0;
+    height: 100%;
+    width: 6px;
+}
+.audio.green-audio-player .volume .volume-controls .slider .progress .pin {
+    left: -5px;
+    top: -8px;
+}
+svg, img {
+    display: block;
+}
+@keyframes spin {
+    from {
+        transform: rotateZ(0);
+   }
+    to {
+        transform: rotateZ(1turn);
+   }
+}
+/* .player {
     width: 74%;
     height: 63px;
     margin-bottom: 22px;
@@ -1221,7 +1359,7 @@ span.boo {
     background-color: #697C94;
     transition: all 1s linear;
     height: 100%;
-}
+} */
 
 .reports{
     background: transparent !important;
@@ -1490,7 +1628,7 @@ input[type="date"] {
 }
 .container_section_about_us{
     margin-left: 8%;
-    padding-top: 11%;
+    padding-top: 3%;
     margin-bottom: 60px;
 }
 
@@ -1498,18 +1636,142 @@ input[type="date"] {
     width: 74%;
     margin: 0 2%;
 }
+.defender_header{
+    margin-left: 3%;
+}
+.defender_header p{
+    display: flex;
+    align-items: center;
+}
+.defender_header .fb{
+    margin-left: 8px;
+    margin-top: 56px;
+}
+.fb img{
+    margin-right: 12px;
+}
+.defender_name{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 47px;
+    /* identical to box height */
 
 
+    color: #505050;
+}
+.defender_biography{
+    font-weight: 350;
+    font-size: 22px;
+    line-height: 29px;
+    color: #717171;
+    margin-bottom: 26px;
+}
 
+.defender_contacts{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #505050;
+    margin-bottom: 20px;
+}
+.defender_contacts img{
+    margin-right: 20px;
+}
+#section1_1{
+    margin-left: 0 !important;
+}
+#section1_2{
+    margin-left: 0 !important;
+}
+.defender_header_2{
+    margin-left: 60px;
+}
+.defender_header_3{
+    margin-left: 60px;
+}
+.defender_header_1_1{
+    width: 50%;
+}
+.defender_header_2_1{
+    width: 50%;
+    margin-left: 52px;
+}
+.defender_header_3 p{
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.defender_content{
+    margin-top: 62px;
+}
+.about_us_defender_player{
+    width: 91% !important;
+}
+.defender_content_text{
+    margin-left: 3%;
+}
+.defender_content_text p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 52px;
 
-
-
-
-
-
-
-
-
+    color: #505050;
+}
+.vertical_hr{
+    width: 2px;
+    background-color: #505050;
+    height: 68.7rem !important;
+    position: absolute;
+    left: 20%;
+}
+.horizontal_line{
+    width: 23px;
+    height: 2px !important;
+    background-color: #505050;
+    margin-top: 33px;
+}
+.structure_header{
+    width: 85%;
+    background: #697C94;
+    box-shadow: 5px 5px 4px rgba(135, 135, 135, 0.15);
+    border-radius: 7px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.structure_content{
+    margin-left: 1.8%;
+    width: 90%;
+}
+.structure_content p{
+    width: 90%;
+    height: 47px;
+    background: #D9D9D9;
+    box-shadow: 5px 5px 4px rgba(135, 135, 135, 0.15);
+    border-radius: 7px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    line-height: 31px;
+    color: #505050;
+    padding-top: 20px;
+}
+.structure_header p{
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FBFBFB;
+}
+.structure_div p{
+    width: auto;
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+}
 @media screen and (max-width: 1880px){
     .carousel_title h5 {
         font-style: normal !important;

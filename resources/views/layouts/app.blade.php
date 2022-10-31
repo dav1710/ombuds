@@ -6,8 +6,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" id="csrf-token">
     {{-- <link rel="shortcut icon" href="{{ asset('img/icons/favicon.ico') }}" type="image/x-icon"> --}}
     <link href="{{ asset('css/style.css?v=' . date('YmdHis')) }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/preloader.css?v=' . date('YmdHis')) }}">
-    <link rel="stylesheet" href="{{ asset('css/leaflet.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
     @if(app()->getLocale() === 'ru' || app()->getLocale() === 'en')
@@ -216,9 +214,8 @@
 
 
     <script src="{{ asset('js/jquery.js')}}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js')}}" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/popper.min.js')}}" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/bootstrap.min.js')}}" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/bootstrap.min.js')}}" crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js?v=' . date('YmdHis')) }}"></script>
     <script src="{{ asset('js/main.js')}}"></script>
     @yield('scripts')

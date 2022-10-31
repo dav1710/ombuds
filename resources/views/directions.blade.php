@@ -55,32 +55,56 @@
                 </div>
             </div>
            <div class="d-flex flex-column directions_applications">
-            <audio autoplay id="player" src="../audio/song.mp3"></audio>
-            <div class="player">
-              <div class="control">
-                <i class="fas fa-play" id="playbtn"></i>
-              </div>
-              <div class="info">
-                <div class="bar">
-                  <div id="progress"></div>
+            <div class="holder" >
+                <div class="audio green-audio-player">
+                  <div class="loading">
+                    <div class="spinner"></div>
+                  </div>
+                  <div class="play-pause-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                      <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+                    </svg>
+                  </div>
+
+                  <div class="controls">
+                    <span class="current-time">0:00</span>
+                    <div class="slider" data-direction="horizontal">
+                      <div class="progress">
+                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                      </div>
+                    </div>
+                    <span class="total-time">0:00</span>
+                  </div>
+                  <audio crossorigin>
+                    <source src="{{ asset('audio/song.mp3')  }}" type="audio/mpeg">
+                  </audio>
                 </div>
               </div>
+            <div class="holder">
+                <div class="audio green-audio-player">
+                  <div class="loading">
+                    <div class="spinner"></div>
+                  </div>
+                  <div class="play-pause-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                      <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+                    </svg>
+                  </div>
 
-              <div id="current">0:00</div>
-            </div>
-            <audio id="player" src="../audio/song.mp3"></audio>
-            <div class="player">
-              <div class="control">
-                <i class="fas fa-play" id="playbtn"></i>
-              </div>
-              <div class="info">
-                <div class="bar">
-                  <div id="progress"></div>
+                  <div class="controls">
+                    <span class="current-time">0:00</span>
+                    <div class="slider" data-direction="horizontal">
+                      <div class="progress">
+                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                      </div>
+                    </div>
+                    <span class="total-time">0:00</span>
+                  </div>
+                  <audio crossorigin>
+                    <source src="{{ asset('audio/song.mp3')  }}" type="audio/mpeg">
+                  </audio>
                 </div>
               </div>
-
-              <div id="current">0:00</div>
-            </div>
             <p>Մարդու իրավունքների պաշտպանը կամ նրա իրավասու ներկայացուցիչը բողոքի ուսումնասիրության կամ քննարկման ընթացքում ունի լիազորություն անարգել այցելելու իրավասու պետական կամ տեղական ինքնակառավարման մարմին կամ կազմակերպություն: Բացի այդ, Պաշտպանը՝ միջազգային կոնվենցիոն կարգավիճակների հիմքով, ունի նաև մշտադիտարկման այցեր կատարելու հնարավորություն: Յուրաքանչյուր դեպքում պահպանվում է այցերի գաղտնիությունը՝ դրանք իրականացվում են առանց նախնական իրազեկման:</p>
             <p>Այս երկու տիպի այցերը տարբերվում են իրականացման հիմքով և նպատակով: Առաջին դեպքում հիմքն անհատական բողոքն է կամ սեփական նախաձեռնությամբ քննարկվող հարցը: Մշտադիտարկման այցի իրականացման հիմքը համապատասխան հաստատություններում բնակվող կամ ազատությունից զրկված անձանց պայմանները և իրավունքների ապահովման վիճակի պարբերական ստուգումն է՝ անկախ անհատական բողոքների առկայությունից:</p>
             <p>Մշտադիտարկման այցեր են իրականացվում նաև Պաշտպանի՝ «Երեխայի իրավունքների մասին» և «Հաշմանդամություն ունեցող անձանց իրավունքների մասին» ՄԱԿ-ի կոնվենցիաների դրույթների կիրառության մշտադիտարկում իրականացնող ազգային հաստատության մանդատի շրջանակներում: Մշտադիտարկման այցերն իրականացվում են խնամք և պաշտպանություն իրականացնող հաստատություններ:</p>
