@@ -343,11 +343,117 @@
 
                     </div>
                 </div>
-                <div class="tab-pane container_section_about_us fade" id="section2_2" role="tabpanel" aria-labelledby="section2_2-tab">
-                    bbb
+                <div class="tab-pane container_section_about_us_card fade" id="section2_2" role="tabpanel" aria-labelledby="section2_2-tab">
+                    <div class="card-deck d-flex flex-wrap">
+                        <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+
+                          <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+
+                          <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+
+                          <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+
+                          <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+
+                          <div class="card">
+                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Անուն Ազգանուն</h5>
+                            <p class="card-text">Պաշտոն</p>
+                          </div>
+                        </div>
+
+                      </div>
                 </div>
-                <div class="tab-pane container_section_about_us fade" id="section2_3" role="tabpanel" aria-labelledby="section2_3-tab">
-                    ccc
+                <div class="tab-pane container_section_about_us_card fade" id="section2_3" role="tabpanel" aria-labelledby="section2_3-tab">
+                    <div class="d-flex flex-column vacancies mb-5">
+                        <div class="report_card">
+                           <div class="reports_card_img">
+                               <img src="{{ asset('img/report.png') }}" alt="report">
+                           </div>
+                           <div class="reports_card_text">
+                               Մարդու իրավունքների պաշտպանը, յուրաքանչյուր տարի՝ մինչև մարտի 31-ը հրապարակում և Ազգային ժողովին է ներկայացնում տարեկան հաղորդում՝ նախորդ տարվա իր գործունեության, ինչպես նաև մարդու իրավունքների և ազատություններ պաշտպանության վիճակի մասին:
+                           </div>
+                           <button onclick="dropDownFunction()" ><img class="dropdown_work" src="{{ asset('img/next.png') }}" id="dropdown_rotate" alt=""></button>
+                        </div>
+                        <div id="first" style="display: none;" class="report_card">
+                           <div class="reports_card_img">
+                               <img  src="{{ asset('img/report.png') }}" alt="report">
+                           </div>
+                           <div class="reports_card_text">
+                               Որպես կանխարգելման ազգային մեխանիզմ՝ Պաշտպանը յուրաքանչյուր տարվա առաջին եռամսյակի ընթացքում հրապարակում և Ազգային ժողովին է ներկայացնում նաև առանձին զեկույց նախորդ տարվա ընթացքում խոշտանգումների և վատ վերաբերմունքի այլ ձևերի կանխարգելմանն ուղղված գործունեության վերաբերյալ:
+                           </div>
+                        </div>
+                        <div class="report_card">
+                           <div class="reports_card_img">
+                               <img src="{{ asset('img/report.png') }}" alt="report">
+                           </div>
+                           <div class="reports_card_text">
+                               Մարդու իրավունքների պաշտպանը, յուրաքանչյուր տարի՝ մինչև մարտի 31-ը հրապարակում և Ազգային ժողովին է ներկայացնում տարեկան հաղորդում՝ նախորդ տարվա իր գործունեության, ինչպես նաև մարդու իրավունքների և ազատություններ պաշտպանության վիճակի մասին:
+                           </div>
+                           <button onclick="dropDownFunction()" ><img class="dropdown_work" src="{{ asset('img/next.png') }}" id="dropdown_rotate" alt=""></button>
+                        </div>
+                        <div id="first" style="display: none;" class="report_card">
+                           <div class="reports_card_img">
+                               <img  src="{{ asset('img/report.png') }}" alt="report">
+                           </div>
+                           <div class="reports_card_text">
+                               Որպես կանխարգելման ազգային մեխանիզմ՝ Պաշտպանը յուրաքանչյուր տարվա առաջին եռամսյակի ընթացքում հրապարակում և Ազգային ժողովին է ներկայացնում նաև առանձին զեկույց նախորդ տարվա ընթացքում խոշտանգումների և վատ վերաբերմունքի այլ ձևերի կանխարգելմանն ուղղված գործունեության վերաբերյալ:
+                           </div>
+                        </div>
+                        <div class="report_card">
+                           <div class="reports_card_img">
+                               <img src="{{ asset('img/report.png') }}" alt="report">
+                           </div>
+                           <div class="reports_card_text">
+                               Տարբեր տարիների տարեկան հաղորդումները և զեկույցները պարունակում են ինչպես առանձին ոլորտներում առկա խնդիրների մասին վերլուծություններ, այնպես էլ դրանց լուծման ուղղված կոնկրետ առաջարկներ:
+                           </div>
+                        </div>
+                      </div>
                 </div>
                 <div class="tab-pane container_section_about_us fade" id="section2_4" role="tabpanel" aria-labelledby="section2_4-tab">
                     ddd
@@ -723,5 +829,6 @@
 @endsection
 @section('scripts')
   <script src="{{ asset('js/player.js') }}"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
   <script src="{{ asset('js/font_awesome/all.min.js') }}"></script>
 @endsection
