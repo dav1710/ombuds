@@ -415,7 +415,7 @@
                             <?php $count = 0; ?>
                             @foreach($vacancies as $item)
                                 <div class="card">
-                                <div class="d-flex justify-content-around card-header" id="headingThree">
+                                <div class="d-flex justify-content-around card-header vacancy_header" id="headingThree">
                                     <img src="{{ asset('img/job.png') }}" alt="">
                                     <h5 class="mb-0">{{ $item->work_title_am }}</h5>
                                     <button class=" vacancy_btn collapsed" data-toggle="collapse" data-target="#collapseThree{{ $count }}" aria-expanded="false" aria-controls="collapseThree{{ $count }}">

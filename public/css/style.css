@@ -1829,6 +1829,13 @@ input[type="date"] {
     box-shadow: 7px 5px 4px rgba(120, 120, 120, 0.15);
     border-radius: 21px;
 }
+.vacancy_header{
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+
+
 
 @media screen and (max-width: 1880px){
     .carousel_title h5 {
