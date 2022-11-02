@@ -1815,8 +1815,20 @@ input[type="date"] {
     background: transparent;
     border: none;
 }
-
-
+.vacancy_more {
+    transition: all 0.3s ease;
+ }
+.vacancy_btn:not(.collapsed) .vacancy_more {
+  transform: rotate(180deg);
+}
+.container_section_about_us_vacancy .card{
+    width: 93%;
+    margin-left: 45px;
+    height: 100%;
+    background: #EBEBEB;
+    box-shadow: 7px 5px 4px rgba(120, 120, 120, 0.15);
+    border-radius: 21px;
+}
 
 @media screen and (max-width: 1880px){
     .carousel_title h5 {

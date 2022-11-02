@@ -298,7 +298,7 @@
                 </div>
             </div>
            <div class="d-flex flex-column directions_applications">
-            <ul class="nav nav-tabs container d-flex flex-row justify-content-start scroll_nav about_as_small" id="myTab" role="tablist">
+            <ul class="nav nav-tabs container d-flex flex-row justify-content-start scroll_nav about_as_small mb-4" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link custom_list_group_action w-100 active" id="section2_1-tab" data-bs-toggle="tab" data-bs-target="#section2_1" type="button" role="tab" aria-controls="section2_1" aria-selected="true">Կառուցվածք</button>
                 </li>
@@ -409,51 +409,29 @@
 
                       </div>
                 </div>
-                <div class="tab-pane container_section_about_us_card fade" id="section2_3" role="tabpanel" aria-labelledby="section2_3-tab">
+                <div class="tab-pane container_section_about_us_vacancy fade" id="section2_3" role="tabpanel" aria-labelledby="section2_3-tab">
                     <div class="d-flex flex-column vacancies mb-5">
-                        <div class="report_card">
-                           <div class="reports_card_img">
-                               <img src="{{ asset('img/report.png') }}" alt="report">
-                           </div>
-                           <div class="reports_card_text">
-                               Մարդու իրավունքների պաշտպանը, յուրաքանչյուր տարի՝ մինչև մարտի 31-ը հրապարակում և Ազգային ժողովին է ներկայացնում տարեկան հաղորդում՝ նախորդ տարվա իր գործունեության, ինչպես նաև մարդու իրավունքների և ազատություններ պաշտպանության վիճակի մասին:
-                           </div>
-                           <button onclick="dropDownFunction()" ><img class="dropdown_work" src="{{ asset('img/next.png') }}" id="dropdown_rotate" alt=""></button>
-                        </div>
-                        <div id="first" style="display: none;" class="report_card">
-                           <div class="reports_card_img">
-                               <img  src="{{ asset('img/report.png') }}" alt="report">
-                           </div>
-                           <div class="reports_card_text">
-                               Որպես կանխարգելման ազգային մեխանիզմ՝ Պաշտպանը յուրաքանչյուր տարվա առաջին եռամսյակի ընթացքում հրապարակում և Ազգային ժողովին է ներկայացնում նաև առանձին զեկույց նախորդ տարվա ընթացքում խոշտանգումների և վատ վերաբերմունքի այլ ձևերի կանխարգելմանն ուղղված գործունեության վերաբերյալ:
-                           </div>
-                        </div>
-                        <div class="report_card">
-                           <div class="reports_card_img">
-                               <img src="{{ asset('img/report.png') }}" alt="report">
-                           </div>
-                           <div class="reports_card_text">
-                               Մարդու իրավունքների պաշտպանը, յուրաքանչյուր տարի՝ մինչև մարտի 31-ը հրապարակում և Ազգային ժողովին է ներկայացնում տարեկան հաղորդում՝ նախորդ տարվա իր գործունեության, ինչպես նաև մարդու իրավունքների և ազատություններ պաշտպանության վիճակի մասին:
-                           </div>
-                           <button onclick="dropDownFunction()" ><img class="dropdown_work" src="{{ asset('img/next.png') }}" id="dropdown_rotate" alt=""></button>
-                        </div>
-                        <div id="first" style="display: none;" class="report_card">
-                           <div class="reports_card_img">
-                               <img  src="{{ asset('img/report.png') }}" alt="report">
-                           </div>
-                           <div class="reports_card_text">
-                               Որպես կանխարգելման ազգային մեխանիզմ՝ Պաշտպանը յուրաքանչյուր տարվա առաջին եռամսյակի ընթացքում հրապարակում և Ազգային ժողովին է ներկայացնում նաև առանձին զեկույց նախորդ տարվա ընթացքում խոշտանգումների և վատ վերաբերմունքի այլ ձևերի կանխարգելմանն ուղղված գործունեության վերաբերյալ:
-                           </div>
-                        </div>
-                        <div class="report_card">
-                           <div class="reports_card_img">
-                               <img src="{{ asset('img/report.png') }}" alt="report">
-                           </div>
-                           <div class="reports_card_text">
-                               Տարբեր տարիների տարեկան հաղորդումները և զեկույցները պարունակում են ինչպես առանձին ոլորտներում առկա խնդիրների մասին վերլուծություններ, այնպես էլ դրանց լուծման ուղղված կոնկրետ առաջարկներ:
-                           </div>
-                        </div>
-                      </div>
+                          <div id="accordion">
+                            <?php $count = 0; ?>
+                            @foreach($vacancies as $item)
+                                <div class="card">
+                                <div class="d-flex justify-content-around card-header" id="headingThree">
+                                    <img src="{{ asset('img/job.png') }}" alt="">
+                                    <h5 class="mb-0">{{ $item->work_title_am }}</h5>
+                                    <button class=" vacancy_btn collapsed" data-toggle="collapse" data-target="#collapseThree{{ $count }}" aria-expanded="false" aria-controls="collapseThree{{ $count }}">
+                                        <img class="vacancy_more" src="{{ asset('img/next.png') }}">
+                                    </button>
+                                </div>
+                                <div id="collapseThree{{ $count }}" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        {{ $item->work_content_am }}
+                                    </div>
+                                </div>
+                                </div>
+                            <?php $count++; ?>
+                            @endforeach
+                          </div>
+                    </div>
                 </div>
                 <div class="tab-pane container_section_about_us fade" id="section2_4" role="tabpanel" aria-labelledby="section2_4-tab">
                     ddd

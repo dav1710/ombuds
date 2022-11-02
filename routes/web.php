@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
@@ -25,5 +26,5 @@ Route::get('/reports', [HomeController::class, 'reports'])->name('reports');
 Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
 Route::get('/cooperation', [HomeController::class, 'cooperation'])->name('cooperation');
 Route::get('/media', [NewsController::class, 'media'])->name('media');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/about', [VacancyController::class, 'vacancies'])->name('about');
 // Route::post('/media', [NewsController::class, 'search'])->name('media_search');
