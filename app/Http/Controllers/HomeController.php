@@ -38,6 +38,42 @@ class HomeController extends Controller
     {
         return view('about');
     }
+    public function torture()
+    {
+        return view('torture');
+    }
+    public function soldier_rights()
+    {
+        return view('soldier_rights');
+    }
+    public function women_rights()
+    {
+        return view('women_rights');
+    }
+    public function child_rights()
+    {
+        return view('child_rights');
+    }
+    public function invalid_rights()
+    {
+        return view('invalid_rights');
+    }
+    public function statistics()
+    {
+        return view('statistics');
+    }
+    public function information()
+    {
+        return view('information');
+    }
+    public function business_rights()
+    {
+        return view('business_rights');
+    }
+	public function decisions()
+    {
+        return view('decisions');
+    }
     public function getContent(Request $request)
     {
         switch ($request->type) {

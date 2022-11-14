@@ -18,13 +18,13 @@
           <button class="nav-link custom_list_group_action big_list_tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section3" type="button" role="tab" aria-controls="section2" aria-selected="false">Տարեկան հաղորդումներ</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link custom_list_group_action big_list_tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section4" type="button" role="tab" aria-controls="section2" aria-selected="false">ՍԴ Դիմումներ</button>
+          <button class="nav-link custom_list_group_action big_list_tab apteryges-tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section4" type="button" role="tab" aria-controls="section2" aria-selected="false">ՍԴ Դիմումներ</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action big_list_tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section5" type="button" role="tab" aria-controls="section2" aria-selected="false">ՍԴ Հատուկ կարծիքներ</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link custom_list_group_action big_list_tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section6" type="button" role="tab" aria-controls="section2" aria-selected="false">Օրենսդրական առաջարկներ և կարծիքներ</button>
+          <button class="nav-link custom_list_group_action big_list_tab opinion-tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section6" type="button" role="tab" aria-controls="section2" aria-selected="false">Օրենսդրական առաջարկներ և կարծիքներ</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action big_list_tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section7" type="button" role="tab" aria-controls="section2" aria-selected="false">Իրավական վերլուծություններ</button>
@@ -39,8 +39,8 @@
                 </div>
             </div>
             <div class="d-flex flex-column directions_applications">
-               <div class="d-flex flex-column mb-5">
-                 <div class="d-flex report_card">
+               <div class="mb-5 report_cards">
+                 <div class="report_card">
                     <div class="reports_card_img">
                         <img src="{{ asset('img/report.png') }}" alt="report">
                     </div>

@@ -1,10 +1,8 @@
 @extends('layouts.app')
 @section('title') Contact Us @endsection
 
-
-
 @section('content')
-<div class="scroll_header">
+<div id="contact_us" class="scroll_header soldier_rights">
     <ul class="nav nav-tabs container d-flex flex-row justify-content-evenly scroll_nav contact_us" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1" type="button" role="tab" aria-controls="section1" aria-selected="true">Դիմել Պաշտպանին</button>
@@ -18,13 +16,17 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane container_section fade show active" id="section1" role="tabpanel" aria-labelledby="section1-tab">
-            <div class="d-flex align-items-baseline contact_us_action">
-                <div class="line_2"></div>
-                <div class="contact_us_action_title">
-                    <p>Դիմել Պաշտպանին</p>
-                </div>
-            </div>
-            <div class="d-flex apply_contact_us">
+            <div class="tab-header">
+				<div class="d-flex align-items-baseline contact_us_action">
+                	<div class="line_2"></div>
+                	<div class="contact_us_action_title">
+                	    <p>Դիմել Պաշտպանին</p>
+                	</div>
+            	</div>
+			</div>
+            <div class="tab-main">
+				<div class="apply">
+					<div class="d-flex apply_contact_us flex-wrap">
                 <div class="apply_contact_us_item">
                     <p>Եթե դուք ունեք նույնականացման քարտ</p>
                 </div>
@@ -47,15 +49,15 @@
                     <p>Եթե Դուք չունեք նույնականացման քարտ</p>
                     <img class="arrow_down" src="{{ asset('img/arrow.png') }}" alt="arrow">
                 </div>
-                <div class="d-flex apply_not_id_form">
+                <div class="d-flex flex-wrap apply_not_id_form">
                     <div class="apply_not_id_form_left">
                         <input type="text" name="full_name" class="apply_name" placeholder="Ամբողջական անուն">
                         <textarea name="message" id="" cols="20" rows="8" class="apply_message" placeholder="Հաղորդագրություն"></textarea>
                     </div>
                     <div class="apply_not_id_form_right">
                         <div class="apply_not_id_right_container">
-                            <input type="text" name="subject" class="apply_subject" placeholder="Թեմա">
-                            <input type="text" name="email" class="apply_email" placeholder="Էլեկտրոնային հասցե">
+                            <div><input type="text" name="subject" class="apply_subject" placeholder="Թեմա"></div>
+                            <div><input type="text" name="email" class="apply_email" placeholder="Էլեկտրոնային հասցե"></div>
                         </div>
                         <div class="apply_not_id_form_buttons">
                             <label class="apply_file">
@@ -72,15 +74,20 @@
                     </div>
                 </div>
             </div>
+				</div>
+			</div>
         </div>
         <div class="tab-pane container_section fade" id="section2" role="tabpanel" aria-labelledby="section2-tab">
-            <div class="d-flex align-items-baseline contact_us_action">
-                <div class="line_2"></div>
-                <div class="contact_us_action_title">
-                    <p>Հաճախ տրվող հարցեր</p>
-                </div>
-            </div>
-           <div class="contact_us_question">
+            <div class="tab-header">
+				<div class="d-flex align-items-baseline contact_us_action">
+                	<div class="line_2"></div>
+                	<div class="contact_us_action_title">
+                    	<p>Հաճախ տրվող հարցեր</p>
+                	</div>
+            	</div>
+			</div>
+           <div class="tab-main">
+				<div class="contact_us_question">
                 <div class="contact_us_question_title">
                     <p>Ո՞վ է Մարդու իրավունքների պաշտպանը</p>
                 </div>
@@ -104,15 +111,19 @@
                     </p>
                 </div>
            </div>
+			</div>
         </div>
         <div class="tab-pane container_section fade" id="section3" role="tabpanel" aria-labelledby="section3-tab">
-            <div class="d-flex align-items-baseline contact_us_action">
-                <div class="line_2"></div>
-                <div class="contact_us_action_title">
-                    <p>Հետադարձ կապ</p>
-                </div>
-            </div>
-            <div class="contact_cards">
+            <div class="tab-header">
+				<div class="d-flex align-items-baseline contact_us_action">
+                	<div class="line_2"></div>
+                	<div class="contact_us_action_title">
+                	    <p>Հետադարձ կապ</p>
+                	</div>
+            	</div>
+			</div>
+            <div class="tab-main">
+				<div class="contact_cards">
                 <div class="contact_card_item">
                     <div class="card_content d-flex flex-column">
                         <div class="card_item_title">
@@ -185,6 +196,7 @@
                     </div>
                 </div>
             </div>
+			</div>
         </div>
       </div>
 </div>

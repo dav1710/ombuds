@@ -1,9 +1,6 @@
 @extends('layouts.app')
 @section('title') Media @endsection
 
-
-
-
 @section('content')
 <div class="scroll_header">
     <ul class="nav nav-tabs container d-flex flex-row justify-content-evenly scroll_nav media_center" id="myTab" role="tablist">

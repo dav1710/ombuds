@@ -6,9 +6,9 @@
 
 @section('content')
 <div class="scroll_header">
-    <ul class="nav nav-tabs container d-flex flex-row justify-content-center scroll_nav about_us" id="myTab" role="tablist">
+      <ul class="nav nav-tabs container d-flex flex-row justify-content-center scroll_nav about_us" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link custom_list_group_action w-100 active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1" type="button" role="tab" aria-controls="section1" aria-selected="true">Պաշտպան</button>
+          <button class="nav-link custom_list_group_action active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1" type="button" role="tab" aria-controls="section1" aria-selected="true">Պաշտպան</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action big_list_tab" id="section2-tab" data-bs-toggle="tab" data-bs-target="#section2" type="button" role="tab" aria-controls="section2" aria-selected="false">Աշխատակազմ</button>
@@ -20,10 +20,10 @@
           <button class="nav-link custom_list_group_action big_list_tab" id="section4-tab" data-bs-toggle="tab" data-bs-target="#section4" type="button" role="tab" aria-controls="section4" aria-selected="false">Պաշտպանի մասին ՀՀ սահմանադրական օրենքը</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link custom_list_group_action big_list_tab" id="section5-tab" data-bs-toggle="tab" data-bs-target="#section5" type="button" role="tab" aria-controls="section5" aria-selected="false">Միջազգային Կոնվենցիոն կարգավիճակներ</button>
+          <button class="nav-link custom_list_group_action big_list_tab international-tab" id="section5-tab" data-bs-toggle="tab" data-bs-target="#section5" type="button" role="tab" aria-controls="section5" aria-selected="false">Միջազգային Կոնվենցիոն կարգավիճակներ</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link custom_list_group_action big_list_tab" id="section6-tab" data-bs-toggle="tab" data-bs-target="#section6" type="button" role="tab" aria-controls="section6" aria-selected="false">Պաշտպանին առընթեր խորհուրդներ</button>
+          <button class="nav-link custom_list_group_action big_list_tab advice-tab" id="section6-tab" data-bs-toggle="tab" data-bs-target="#section6" type="button" role="tab" aria-controls="section6" aria-selected="false">Պաշտպանին առընթեր խորհուրդներ</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action big_list_tab" id="section7-tab" data-bs-toggle="tab" data-bs-target="#section7" type="button" role="tab" aria-controls="section7" aria-selected="false">Պատմություն</button>
@@ -37,10 +37,10 @@
                     <p>Պաշտպան</p>
                 </div>
             </div>
-            <div class="d-flex flex-column directions_applications_small">
-                <ul class="nav nav-tabs container d-flex flex-row justify-content-start scroll_nav about_as_small" id="myTab" role="tablist">
+            <div class="d-flex flex-column about_directions_applications directions_applications_small">
+                <ul class="nav nav-tabs container d-flex scroll_nav about_as_small" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link custom_list_group_action w-100 active" id="section1_1-tab" data-bs-toggle="tab" data-bs-target="#section1_1" type="button" role="tab" aria-controls="section1_1" aria-selected="true">Կենսագրություն</button>
+                      <button class="nav-link custom_list_group_action active" id="section1_1-tab" data-bs-toggle="tab" data-bs-target="#section1_1" type="button" role="tab" aria-controls="section1_1" aria-selected="true">Կենսագրություն</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link custom_list_group_action big_list_tab" id="section1_2-tab" data-bs-toggle="tab" data-bs-target="#section1_2" type="button" role="tab" aria-controls="section1_2" aria-selected="false">Կառույցի իրավական առաքելությունը</button>
@@ -48,7 +48,7 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane container_section_about_us fade show active" id="section1_1" role="tabpanel" aria-labelledby="section1_1-tab">
-                        <div class="d-flex defender_header">
+                        <div class="defender_header">
                             <div class="defender_header_1">
                                 <img src="{{ asset('img/defender.png') }}" alt="defender">
                             </div>
@@ -84,8 +84,10 @@
                                       </audio>
                                     </div>
                                   </div>
-                                  <p class="fb"><img src="{{ asset('img/icons/fb.png') }}" alt="facebook"> Facebook </p>
-                                  <p><img src="{{ asset('img/icons/tw.png') }}" alt="twitter"> Twitter </p>
+                                  <div class="defender_social">
+									<p class="fb"><img src="{{ asset('img/icons/fb.png') }}" alt="facebook"> Facebook </p>
+                                  	<p><img src="{{ asset('img/icons/tw.png') }}" alt="twitter"> Twitter </p>
+								  </div>
                             </div>
                         </div>
                         <div class="defender_content">
@@ -204,12 +206,12 @@
                         </div>
                     </div>
                     <div class="tab-pane container_section_about_us fade" id="section1_2" role="tabpanel" aria-labelledby="section1_2-tab">
-                        <div class="d-flex justify-content-start defender_header">
+                        <div class="defender_header">
                             <div class="defender_header_1_1">
                                 <img src="{{ asset('img/defender_1.png') }}" alt="defender">
                             </div>
                             <div class="defender_header_2_1">
-                                <div class="holder">
+                                <div class="holder" id="defender_scales_holder">
                                     <div class="audio green-audio-player">
                                       <div class="loading">
                                         <div class="spinner"></div>
@@ -297,150 +299,257 @@
                     <p>Աշխատակազմ</p>
                 </div>
             </div>
-           <div class="d-flex flex-column directions_applications">
-            <ul class="nav nav-tabs container d-flex flex-row justify-content-start scroll_nav about_as_small mb-4" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link custom_list_group_action w-100 active" id="section2_1-tab" data-bs-toggle="tab" data-bs-target="#section2_1" type="button" role="tab" aria-controls="section2_1" aria-selected="true">Կառուցվածք</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link custom_list_group_action big_list_tab" id="section2_2-tab" data-bs-toggle="tab" data-bs-target="#section2_2" type="button" role="tab" aria-controls="section2_2" aria-selected="false">Աշխատակիցներ</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link custom_list_group_action big_list_tab" id="section2_3-tab" data-bs-toggle="tab" data-bs-target="#section2_3" type="button" role="tab" aria-controls="section2_3" aria-selected="false">Թափուր աշխատատեղեր</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link custom_list_group_action big_list_tab" id="section2_4-tab" data-bs-toggle="tab" data-bs-target="#section2_4" type="button" role="tab" aria-controls="section2_4" aria-selected="false">Բյուջե</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link custom_list_group_action big_list_tab" id="section2_5-tab" data-bs-toggle="tab" data-bs-target="#section2_5" type="button" role="tab" aria-controls="section2_5" aria-selected="false">Գնումներ</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane container_section_about_us fade show active" id="section2_1" role="tabpanel" aria-labelledby="section2_1-tab">
-                    <div class="structure">
-                        <hr class="vertical_hr">
-                        <div class="structure_header">
-                            <p>Հայաստանի Հանրապետության Մարդու իրավունքների Պաշտպան</p>
-                        </div>
-                        <div class="d-flex flex-column structure_content">
-                            <div class="d-flex"><hr class="horizontal_line"><p>Պաշտպանի խորհրդականներ</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Պաշտպանի օգնականներ</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Քրեական արդարադատության ոլորտում և զինված ուժերում մարդու իրավունքների պաշտպանության դեպարտամենտ</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Քարտուղարություն</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Քաղաքացիական, սոցիալ-տնտեսական և մշակութային իրավունքների պաշտպանության դեպարտամենտ</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Հետազոտական և կրթական կենտրոն</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><div class="d-flex structure_div">
-                                <p>Մարզային ստորաբաժանումներ</p>
-                                <hr class="horizontal_line"><p>Շիրակի մարզ</p>
-                                <hr class="horizontal_line"><p>Սյունիքի մարզ</p>
-                                <hr class="horizontal_line"><p>Գեղարքունիքի մարզ</p>
-                            </div></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Միջազգային համագործակցության վարչություն</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Խոշտանգումների և վատ վերաբերմունքի կանխարգելման վարչություն</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Հանրային կապերի բաժին</p></div>
-                            <div class="d-flex"><hr class="horizontal_line"><p>Ներքին աուդիտի բաժին</p></div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane container_section_about_us_card fade" id="section2_2" role="tabpanel" aria-labelledby="section2_2-tab">
-                    <div class="card-deck d-flex flex-wrap">
-                        <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
+            <div class="d-flex flex-column about_directions_applications directions_applications">
+              <ul class="nav nav-tabs container d-flex   scroll_nav about_as_small" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link custom_list_group_action active" id="section2_1-tab" data-bs-toggle="tab" data-bs-target="#section2_1" type="button" role="tab" aria-controls="section2_1" aria-selected="true">Կառուցվածք</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link custom_list_group_action big_list_tab" id="section2_2-tab" data-bs-toggle="tab" data-bs-target="#section2_2" type="button" role="tab" aria-controls="section2_2" aria-selected="false">Աշխատակիցներ</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link custom_list_group_action big_list_tab" id="section2_3-tab" data-bs-toggle="tab" data-bs-target="#section2_3" type="button" role="tab" aria-controls="section2_3" aria-selected="false">Թափուր աշխատատեղեր</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link custom_list_group_action big_list_tab" id="section2_4-tab" data-bs-toggle="tab" data-bs-target="#section2_4" type="button" role="tab" aria-controls="section2_4" aria-selected="false">Բյուջե</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link custom_list_group_action big_list_tab" id="section2_5-tab" data-bs-toggle="tab" data-bs-target="#section2_5" type="button" role="tab" aria-controls="section2_5" aria-selected="false">Գնումներ</button>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane container_section_about_us fade show active" id="section2_1" role="tabpanel" aria-labelledby="section2_1-tab">
+                      <div class="structure">
+                          <hr class="vertical_hr">
+                          <div class="structure_header">
+                              <p>Հայաստանի Հանրապետության Մարդու իրավունքների Պաշտպան</p>
                           </div>
-                        </div>
-                        <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
+                          <div class="d-flex flex-column structure_content">
+                              <div class="d-flex"><hr class="horizontal_line"><p>Պաշտպանի խորհրդականներ</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Պաշտպանի օգնականներ</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Քրեական արդարադատության ոլորտում և զինված ուժերում մարդու իրավունքների պաշտպանության դեպարտամենտ</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Քարտուղարություն</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Քաղաքացիական, սոցիալ-տնտեսական և մշակութային իրավունքների պաշտպանության դեպարտամենտ</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Հետազոտական և կրթական կենտրոն</p></div>
+                              <div class="d-flex"><hr class="horizontal_line">
+                                <div class="d-flex structure_div">
+                                  <p>Մարզային ստորաբաժանումներ</p>
+                                  <hr class="horizontal_line"><p>Շիրակի մարզ</p>
+                                  <hr class="horizontal_line"><p>Սյունիքի մարզ</p>
+                                  <hr class="horizontal_line"><p>Գեղարքունիքի մարզ</p>
+                              </div>
+                            </div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Միջազգային համագործակցության վարչություն</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Խոշտանգումների և վատ վերաբերմունքի կանխարգելման վարչություն</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Հանրային կապերի բաժին</p></div>
+                              <div class="d-flex"><hr class="horizontal_line"><p>Ներքին աուդիտի բաժին</p></div>
                           </div>
-                        </div>
-                        <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
-                          </div>
-                        </div>
-
-                          <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
-                          </div>
-                        </div>
-
-                          <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
-                          </div>
-                        </div>
-
-                          <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
-                          </div>
-                        </div>
-
-                          <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
-                          </div>
-                        </div>
-
-                          <div class="card">
-                          <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Անուն Ազգանուն</h5>
-                            <p class="card-text">Պաշտոն</p>
-                          </div>
-                        </div>
-
                       </div>
-                </div>
-                <div class="tab-pane container_section_about_us_vacancy fade" id="section2_3" role="tabpanel" aria-labelledby="section2_3-tab">
-                    <div class="d-flex flex-column vacancies mb-5">
-                          <div id="accordion">
-                            <?php $count = 0; ?>
-                            @foreach($vacancies as $item)
-                                <div class="card">
-                                <div class="d-flex justify-content-around card-header vacancy_header" id="headingThree">
-                                    <img src="{{ asset('img/job.png') }}" alt="">
-                                    <h5 class="mb-0">{{ $item->work_title_am }}</h5>
-                                    <button class=" vacancy_btn collapsed" data-toggle="collapse" data-target="#collapseThree{{ $count }}" aria-expanded="false" aria-controls="collapseThree{{ $count }}">
-                                        <img class="vacancy_more" src="{{ asset('img/next.png') }}">
-                                    </button>
-                                </div>
-                                <div id="collapseThree{{ $count }}" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body">
-                                        {{ $item->work_content_am }}
-                                    </div>
-                                </div>
-                                </div>
-                            <?php $count++; ?>
-                            @endforeach
+                  </div>
+                  <div class="tab-pane container_section_about_us_card fade" id="section2_2" role="tabpanel" aria-labelledby="section2_2-tab">
+                      <div class="card-deck d-flex flex-wrap">
+                          <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
                           </div>
+                          <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+
+                            <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+
+                            <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+
+                            <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+
+                            <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+
+                            <div class="card">
+                            <img class="card-img-top" src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Անուն Ազգանուն</h5>
+                              <p class="card-text">Պաշտոն</p>
+                            </div>
+                          </div>
+
+                        </div>
+                  </div>
+                  <div class="tab-pane container_section_about_us_card fade" id="section2_3" role="tabpanel" aria-labelledby="section2_3-tab">
+                      <div class="d-flex flex-column vacancies mb-5">
+                        <p>
+                          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Link with href
+                          </a>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Button with data-bs-target
+                          </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                          <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane container_section_about_us fade" id="section2_4" role="tabpanel" aria-labelledby="section2_4-tab">
+                    <div class="d-flex flex-column about_directions_applications directions_applications">
+                      <div class="report_news d-flex flex-column">
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Ուղեցույց սպառողների իրավունքների ու պարտականությունների վերաբերյալ
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Ուղեցույց ուսուցիչների համար «Եկեք սովորենք երեխայի իրավունքները»
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">ՈԻՂԵՑՈՒՅՑ Շինարարության թույլտվության տրամադրման կարգի վերաբերյալ
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Ուղեցույց անձնական օգտագործման ապրանքներ Հայաստանի Հանրապետություն արտոնություններով ներմուծելու կանոնների վերաբերյալ
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Ուղեցույց պատերազմի հետեւանքով Լեռնային Ղարաբաղից տեղահանված մարդկանց համար
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Պարսկերեն. حمایت مدافع حقوق بشر در چارچوب وضعیت مکانیسم ملی پیشگیری
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Արաբերեն. مساندة المدافع عن حقوق الإنسان في إطار كونه آلية وطنية للوقاية
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Մարդու իրավունքների պաշտպանը որպես կանխարգելման ազգային մեխանիզմ
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Իսպաներեն. Asistencia de Defensor de derechos humanos en el marco de Mechanismo Nacional de Prevención
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Ռուսերեն. Поддержка Защитника прав человека в рамках стауса национального превентивного механизма
+                          </a>
+                        </div>
+                        <div class="report_news d-flex flex-column">
+                          <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                              <img src="{{ asset('img/icons/pdf.png') }}" alt="pdf">Ֆրանսերեն. Soutien du Defenseur des droits de l'homme dans les cadres du statut du Mechanisme National de Prevention
+                          </a>
+                        </div>
+                      </div>
+                      
                     </div>
-                </div>
-                <div class="tab-pane container_section_about_us fade" id="section2_4" role="tabpanel" aria-labelledby="section2_4-tab">
-                    ddd
-                </div>
-                <div class="tab-pane container_section_about_us fade" id="section2_5" role="tabpanel" aria-labelledby="section2_5-tab">
-                    eee
-                </div>
+                  </div>
+                  <div class="tab-pane container_section_about_us fade" id="section2_5" role="tabpanel" aria-labelledby="section2_5-tab">
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Ուղեցույց սպառողների իրավունքների ու պարտականությունների վերաբերյալ
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Ուղեցույց ուսուցիչների համար «Եկեք սովորենք երեխայի իրավունքները»
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">ՈԻՂԵՑՈՒՅՑ Շինարարության թույլտվության տրամադրման կարգի վերաբերյալ
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Ուղեցույց անձնական օգտագործման ապրանքներ Հայաստանի Հանրապետություն արտոնություններով ներմուծելու կանոնների վերաբերյալ
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Ուղեցույց պատերազմի հետեւանքով Լեռնային Ղարաբաղից տեղահանված մարդկանց համար
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Պարսկերեն. حمایت مدافع حقوق بشر در چارچوب وضعیت مکانیسم ملی پیشگیری
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Արաբերեն. مساندة المدافع عن حقوق الإنسان في إطار كونه آلية وطنية للوقاية
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Մարդու իրավունքների պաշտպանը որպես կանխարգելման ազգային մեխանիզմ
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Իսպաներեն. Asistencia de Defensor de derechos humanos en el marco de Mechanismo Nacional de Prevención
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Ռուսերեն. Поддержка Защитника а прав человека в рамках стауса национального превентивного механизма
+                      </a>
+                    </div>
+                    <div class="report_news d-flex flex-column">
+                      <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
+                          <img src="{{ asset('img/icons/doc.png') }}" alt="doc">Ֆրանսերեն. Soutien du Defenseur des droits de l'homme dans les cadres du statut du Mechanisme National de Prevention
+                      </a>
+                    </div>
+                  </div>
+              </div>
             </div>
-           </div>
         </div>
         <div class="tab-pane container_section_about_us fade" id="section3" role="tabpanel" aria-labelledby="section3-tab">
             <div class="d-flex align-items-baseline contact_us_action">
@@ -449,7 +558,7 @@
                     <p>ՀՀ Սահմանադրություն</p>
                 </div>
             </div>
-           <div class="d-flex flex-column directions_applications">
+           <div class="d-flex flex-column about_directions_applications directions_applications">
             <div class="report_news d-flex flex-column">
                 <div class="report_news d-flex flex-column">
                     <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
@@ -521,7 +630,7 @@
                     <p>Պաշտպանի մասին ՀՀ սահմանադրական օրենքը</p>
                 </div>
             </div>
-           <div class="d-flex flex-column directions_applications">
+           <div class="d-flex flex-column about_directions_applications directions_applications">
             <div class="report_news d-flex flex-column">
                 <div class="report_news d-flex flex-column">
                     <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
@@ -593,7 +702,7 @@
                     <p>Միջազգային Կոնվենցիոն կարգավիճակներ</p>
                 </div>
             </div>
-           <div class="d-flex flex-column directions_applications">
+           <div class="d-flex flex-column about_directions_applications directions_applications">
             <div class="report_news d-flex flex-column">
                 <div class="report_news d-flex flex-column">
                     <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
@@ -665,7 +774,7 @@
                     <p>Պաշտպանին առընթեր խորհուրդներ</p>
                 </div>
             </div>
-           <div class="d-flex flex-column directions_applications">
+           <div class="d-flex flex-column about_directions_applications directions_applications">
             <div class="report_news d-flex flex-column">
                 <div class="report_news d-flex flex-column">
                     <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
@@ -737,7 +846,7 @@
                     <p>Պատմություն</p>
                 </div>
             </div>
-           <div class="d-flex flex-column directions_applications">
+           <div class="d-flex flex-column about_directions_applications directions_applications">
             <div class="report_news d-flex flex-column">
                 <div class="report_news d-flex flex-column">
                     <a class="report_pdf report_pdf_news" href="!#" class="mb-3">
