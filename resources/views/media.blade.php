@@ -28,84 +28,59 @@
                     <p>Նորություններ</p>
                 </div>
             </div>
-            <div class="d-flex flex-column directions_applications">
+            <div class="search_container">
+                <form action="" method="POST">
+                    @csrf
+                    @method('POST')
+                    <div class="form-group row">
+                        <input class="form-control w-25" id="date" name="fromDate" placeholder="MM/DD/YYY" type="date"/>
+                        <input class="form-control w-25" id="date" name="toDate" placeholder="MM/DD/YYY" type="date" style="margin-left: 15px"/>
+                        <button class="btn btn-success w-25" name="search" type="submit" style="margin-left: 15px">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex directions_applications">
                 <div class="row mb-5">
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Որո՞նք են կանանց իրավունքների խախտմանը նպաստող պայմաններն աշխատավայրում</p>
+                    {{-- @foreach ($query as $value) --}}
+                    {{-- @if ($value->news_type == 'news') --}}
+                        <div class="col-2 mb-5">
+                            <div class="card course_card cooperation_card_bottom" style="width: 100%;">
+                                <img src="{{ asset('news/news.png') }}" class="card-img-top" alt="...">
+                                <div class="card-body cooperation_body_bottom">
+                                <p class="card-text cooperation_text">«Երեխայի իրավունքները երեխաների աչքերով» խորագրով համաժողովի խորհրդանիշը</p>
+                                <p class="bottom_date"><img src="{{ asset('img/calendar.png') }}" alt="pdf"> 10.06.2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course1.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Ե՞րբ է լուծվում աշխատանքային պայմանագիրը</p>
+                        <div class="col-2 mb-5">
+                            <div class="card course_card cooperation_card_bottom" style="width: 100%;">
+                                <img src="{{ asset('news/news.png') }}" class="card-img-top" alt="...">
+                                <div class="card-body cooperation_body_bottom">
+                                <p class="card-text cooperation_text">«Երեխայի իրավունքները երեխաների աչքերով» խորագրով համաժողովի խորհրդանիշը</p>
+                                <p class="bottom_date"><img src="{{ asset('img/calendar.png') }}" alt="pdf"> 10.06.2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course2.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
+                        <div class="col-2 mb-5">
+                            <div class="card course_card cooperation_card_bottom" style="width: 100%;">
+                                <img src="{{ asset('news/news.png') }}" class="card-img-top" alt="...">
+                                <div class="card-body cooperation_body_bottom">
+                                <p class="card-text cooperation_text">«Երեխայի իրավունքները երեխաների աչքերով» խորագրով համաժողովի խորհրդանիշը</p>
+                                <p class="bottom_date"><img src="{{ asset('img/calendar.png') }}" alt="pdf"> 10.06.2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course3.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Որո՞նք են կանանց իրավունքների խախտմանը նպաստող պայմաններն աշխատավայրում</p>
+                        <div class="col-2 mb-5">
+                            <div class="card course_card cooperation_card_bottom" style="width: 100%;">
+                                <img src="{{ asset('news/news.png') }}" class="card-img-top" alt="...">
+                                <div class="card-body cooperation_body_bottom">
+                                <p class="card-text cooperation_text">«Երեխայի իրավունքները երեխաների աչքերով» խորագրով համաժողովի խորհրդանիշը</p>
+                                <p class="bottom_date"><img src="{{ asset('img/calendar.png') }}" alt="pdf"> 10.06.2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course4.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Ե՞րբ է լուծվում աշխատանքային պայմանագիրը</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course5.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Որո՞նք են կանանց իրավունքների խախտմանը նպաստող պայմաններն աշխատավայրում</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course1.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Ե՞րբ է լուծվում աշխատանքային պայմանագիրը</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card course_card" style="width: 100%;">
-                            <img src="{{ asset('img/course2.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body course_body">
-                              <p class="card-text course_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
-                            </div>
-                        </div>
-                    </div>
+                    {{-- @endif --}}
+                {{-- @endforeach --}}
                 </div>
             </div>
         </div>

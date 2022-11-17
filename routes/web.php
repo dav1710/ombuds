@@ -37,6 +37,7 @@ Route::get('/statistics', [HomeController::class, 'statistics'])->name('statisti
 Route::get('/information', [HomeController::class, 'information'])->name('information');
 Route::get('/business_rights', [HomeController::class, 'business_rights'])->name('business_rights');
 Route::get('/decisions', [HomeController::class, 'decisions'])->name('decisions');
+Route::get('news', [HomeController::class, 'news'])->name('news');
 
 //Tab Redirects
 Route::get('/reports#apteryges', [HomeController::class, 'reports']);

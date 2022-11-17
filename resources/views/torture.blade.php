@@ -47,7 +47,7 @@
                           <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
                         </svg>
                       </div>
-    
+
                       <div class="controls">
                         <span class="current-time">0:00</span>
                         <div class="slider" data-direction="horizontal">
@@ -72,7 +72,7 @@
                               <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
                             </svg>
                           </div>
-        
+
                           <div class="controls">
                             <span class="current-time">0:00</span>
                             <div class="slider" data-direction="horizontal">
@@ -88,8 +88,8 @@
                         </div>
                     </div>
                 </div>
-        
-                
+
+
                 <div class="position-relative torture-video-player">
                     <iframe class="" src="" frameborder="0"></iframe>
                     <div class="play-pause-btn position-absolute">
@@ -106,10 +106,10 @@
                   Մարդու իրավունքների պաշտպանը՝ որպես կանխարգելման ազգային մեխանիզմ իրավասու է՝
                 </p>
               </div>
-              
+
             </div>
         </div>
-        
+
         <div class="tab-pane container_section fade" id="section1" role="tabpanel" aria-labelledby="section1-tab">
           <div class="tab-header">
             <div class="d-flex align-items-baseline contact_us_action">
@@ -123,7 +123,7 @@
           <div class="tab-main">
             <div class="torture_directions_applications ">
             <div class="row mb-5">
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -147,7 +147,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -195,7 +195,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -207,7 +207,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -219,7 +219,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
@@ -231,7 +231,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col mt-3">
+              <div class="col-2 mt-4">
                 <div class="card torture-card position-relative">
                     <img src="{{ asset('img/image40.png') }}" class="card-img-top torture-card-img-top" alt="...">
                     <div class="card-body torture-card-body">
