@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="scroll_header">
-    <ul class="nav nav-tabs container d-flex flex-row justify-content-evenly scroll_nav contact_us" id="myTab" role="tablist">
+    <ul class="nav nav-tabs container contact_us" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link custom_list_group_action w-100 active" id="section1-tab" data-bs-toggle="tab" data-bs-target="#section1" type="button" role="tab" aria-controls="section1" aria-selected="true">Անդամակցություն</button>
         </li>
@@ -95,7 +95,7 @@
             </div>
            <div class="d-flex flex-column directions_applications">
             <div class="d-flex flex-column mb-5">
-                <div class="d-flex report_card">
+                <div class="report_card">
                    <div class="reports_card_img">
                        <img src="{{ asset('img/defendant.png') }}" alt="report">
                    </div>
@@ -103,7 +103,7 @@
                         Միջազգային մասնակցության միջոցով Պաշտպանի հաստատությունը մասնակցում է մարդու իրավունքների պաշտպանության ոլորտում միջազգային իրավական չափանիշների ձևավորմանը։ Իր հերթին, Պաշտպանի հաստատությունը խթանում է միջազգային պայմանագրերի վավերացման և միջազգային պայմանագրային նորմերի ազգային մակարդակում ներդրման գործընթացները, ինչպես նաև անկախ գնահատական է տրվում պետության կողմից այդ ուղղությամբ կատարված աշխատանքներին։
                    </div>
                 </div>
-                <div class="d-flex report_card">
+                <div class="report_card">
                    <div class="reports_card_img">
                        <img src="{{ asset('img/defendant.png') }}" alt="report">
                    </div>
@@ -112,74 +112,74 @@
                    </div>
                 </div>
               </div>
-              <div class="row mb-5">
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image30.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Որո՞նք են կանանց իրավունքների խախտմանը նպաստող պայմաններն աշխատավայրում</p>
-                        </div>
+              <div class="news-cards mb-5">
+                            <a href=" ">
+								<div class="card news-card">
+                                <img src="{{ asset('img/image40.png') }}" class="card-img-top news-card-img-top"
+                                    alt="...">
+                                <div class="card-body news-card-body">
+                                    <p class="card-text news-card-text">Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը: Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը</p>
+                                    <div class="news-card-date">
+                                        <img src="{{ asset('img/calendar.png') }}" alt="calendar">
+                                        <p>10.06.2022</p>
+                                    </div>
+                                </div>
+                            </div>
+							</a>
+                            <a href=" ">
+								<div class="card news-card">
+                                <img src="{{ asset('img/image40.png') }}" class="card-img-top news-card-img-top"
+                                    alt="...">
+                                <div class="card-body news-card-body">
+                                    <p class="card-text news-card-text">Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը: Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը</p>
+                                    <div class="news-card-date">
+                                        <img src="{{ asset('img/calendar.png') }}" alt="calendar">
+                                        <p>10.06.2022</p>
+                                    </div>
+                                </div>
+                            </div>
+							</a>
+                            <a href=" ">
+								<div class="card news-card">
+                                <img src="{{ asset('img/image40.png') }}" class="card-img-top news-card-img-top"
+                                    alt="...">
+                                <div class="card-body news-card-body">
+                                    <p class="card-text news-card-text">Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը: Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը</p>
+                                    <div class="news-card-date">
+                                        <img src="{{ asset('img/calendar.png') }}" alt="calendar">
+                                        <p>10.06.2022</p>
+                                    </div>
+                                </div>
+                            </div>
+							</a>
+                            <a href=" ">
+								<div class="card news-card">
+                                <img src="{{ asset('img/image40.png') }}" class="card-img-top news-card-img-top"
+                                    alt="...">
+                                <div class="card-body news-card-body">
+                                    <p class="card-text news-card-text">Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը: Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը</p>
+                                    <div class="news-card-date">
+                                        <img src="{{ asset('img/calendar.png') }}" alt="calendar">
+                                        <p>10.06.2022</p>
+                                    </div>
+                                </div>
+                            </div>
+							</a>
+                            <a href=" ">
+								<div class="card news-card">
+                                <img src="{{ asset('img/image40.png') }}" class="card-img-top news-card-img-top"
+                                    alt="...">
+                                <div class="card-body news-card-body">
+                                    <p class="card-text news-card-text">Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը: Մարդու իրավունքների պաշտպան Քրիստիննե Գրիգորյանը մասնակցել է «2020թ. 44-օրյա պատերազմական գործողությունների ընթացքում անհայտ կորած անձանց և նրանց ընտանիքների անդամների իրավունքների վիճակը» խորագրով զեկույցի ներկայացմանը</p>
+                                    <div class="news-card-date">
+                                        <img src="{{ asset('img/calendar.png') }}" alt="calendar">
+                                        <p>10.06.2022</p>
+                                    </div>
+                                </div>
+                            </div>
+							</a>
+
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image31.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Ե՞րբ է լուծվում աշխատանքային պայմանագիրը</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image32.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image33.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-              <div class="row mb-5">
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image30.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Որո՞նք են կանանց իրավունքների խախտմանը նպաստող պայմաններն աշխատավայրում</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image31.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Ե՞րբ է լուծվում աշխատանքային պայմանագիրը</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image32.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card course_card cooperation_card_bottom" style="width: 100%;">
-                        <img src="{{ asset('img/image33.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body cooperation_body_bottom">
-                          <p class="card-text cooperation_text">Ի՞նչ պետք է իմանա աշխատանքի ընդունվելու համար փորձաշրջան անցնող քաղաքացին</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
            </div>
         </div>
       </div>

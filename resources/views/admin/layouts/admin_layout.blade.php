@@ -8,9 +8,9 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}"  crossorigin="anonymous" referrerpolicy="no-referrer" >
+  <link rel="stylesheet" href="{{ asset('admin_panel/plugins/fontawesome-free/css/all.min.css') }}"  crossorigin="anonymous" referrerpolicy="no-referrer" >
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('admin_panel/dist/css/adminlte.min.css') }}">
 </head>
 <!--
 `body` tag options:
@@ -36,6 +36,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+    </li>
     </ul>
 
   </nav>
@@ -71,6 +74,98 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon far fa-light fa-newspaper"></i>
+                <p>
+                    Նորություններ
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('news.index') }}" class="nav-link">
+                        <p>Բոլոր Նորությունները</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('news.create') }}" class="nav-link">
+                        <i class="fas fa-plus-square"></i>
+                        <p>Ավելացնել Նորություն</p>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon far fa-sticky-note"></i>
+                <p>
+                    Էջեր
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('page.index') }}" class="nav-link">
+                        <p>Բոլոր Էջերը</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('page.create') }}" class="nav-link">
+                        <i class="fas fa-plus-square"></i>
+                        <p>Ավելացնել Էջ</p>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-sticky-note"></i>
+                <p>
+                    Ենթաէջ
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('tab.index') }}" class="nav-link">
+                        <p>Բոլոր Ենթաէջերը</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('tab.create') }}" class="nav-link">
+                        <i class="fas fa-plus-square"></i>
+                        <p>Ավելացնել Ենթաէջ</p>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-sticky-note"></i>
+                <p>
+                    Աուդիո և վիդեո
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('media.index') }}" class="nav-link">
+                        <p>Բոլոր ֆայլերը</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('media.create') }}" class="nav-link">
+                        <i class="fas fa-plus-square"></i>
+                        <p>Ավելացնել ֆայլ</p>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -98,10 +193,11 @@
 
 <!-- REQUIRED SCRIPTS -->
 
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js')}}"></script>
-<script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}" crossorigin="anonymous"></script>
+<script src="{{ asset('admin_panel/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{ asset('admin_panel/plugins/bootstrap/js/bootstrap.bundle.min.js')}}" crossorigin="anonymous"></script>
 <!-- AdminLTE -->
-<script src="{{ asset('admin/dist/js/adminlte.min.js')}}"></script>
-<script src="{{ asset('admin/dist/js/pages/dashboard3.js')}}"></script>
+<script src="{{ asset('admin_panel/dist/js/adminlte.min.js')}}"></script>
+<script src="{{ asset('admin_panel/dist/js/pages/dashboard3.js')}}"></script>
+@yield('scripts')
 </body>
 </html>

@@ -37285,8 +37285,8 @@
       $('body').toggleClass('invert');
     }); // open/close language dropdown
 
-    $('#current-language').on('click', function () {
-      $('#droped-languages').slideToggle({
+    $("[id=current-language]").on('click', function () { //   changed  $('#elemid') to $("[id=elemid]")
+      $("[id=droped-languages]").slideToggle({
         duration: 200,
         start: function() {
           jQuery(this).css('display','flex');

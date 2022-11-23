@@ -6,17 +6,14 @@
 
 @section('content')
         <div class="info-tab-pane tab-pane container_section fade show active" id="section0" role="tabpanel" aria-labelledby="section0-tab">
-          <div class="tab-header">
             <div class="d-flex align-items-baseline contact_us_action">
               <div class="line_2"></div>
               <div class="contact_us_action_title">
                   <p>Տեղեկատվության հասանելիություն</p>
               </div>
             </div>
-          </div>
-          <div class="tab-main">
-            <div class="torture-audio d-flex flex-column justify-content-center directions_applications">
-              <div class="holder" >
+            <div class="d-flex flex-column justify-content-center directions_applications">
+              <div style="margin-bottom: 30px;" class="holder" >
                   <div class="audio green-audio-player">
                     <div class="loading">
                       <div class="spinner"></div>
@@ -88,7 +85,6 @@
               </p>
 
             </div>
-          </div>
         </div>
 
 @endsection

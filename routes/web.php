@@ -1,8 +1,12 @@
 <?php
 
-use App\Http\Controllers\Admin\HomeController as AdminHomeController;
+use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\MediaFileController;
+use App\Http\Controllers\Admin\NewsController as AdminNewsController;
+use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\TabController;
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
@@ -37,7 +41,16 @@ Route::get('/statistics', [HomeController::class, 'statistics'])->name('statisti
 Route::get('/information', [HomeController::class, 'information'])->name('information');
 Route::get('/business_rights', [HomeController::class, 'business_rights'])->name('business_rights');
 Route::get('/decisions', [HomeController::class, 'decisions'])->name('decisions');
-Route::get('news', [HomeController::class, 'news'])->name('news');
+// Route::get('/news', [HomeController::class, 'news'])->name('news');
+Route::get('/search', [HomeController::class, 'search'])->name('search');
+Route::get('/back', [HomeController::class, 'back_page'])->name('back');
+Route::get('/interviews', [HomeController::class, 'interviews'])->name('interviews');
+Route::get('/videos', [HomeController::class, 'videos'])->name('videos');
+Route::get('/posts', [HomeController::class, 'posts'])->name('posts');
+Route::get('/success_stories', [HomeController::class, 'success_stories'])->name('success_stories');
+Route::get('/education_awareness', [HomeController::class, 'education_awareness'])->name('education_awareness');
+Route::get('/membership', [HomeController::class, 'membership'])->name('membership');
+Route::get('/program_collaboration', [HomeController::class, 'program_collaboration'])->name('program_collaboration');
 
 //Tab Redirects
 Route::get('/reports#apteryges', [HomeController::class, 'reports']);
@@ -47,4 +60,26 @@ Route::get('/reports#opinion', [HomeController::class, 'reports']);
 
 // Admin Panel
 
-Route::get('/admin', [AdminHomeController::class, 'admin']);
+
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+// Admin Pages
+
+// Route::group(['prefix' => 'admin',  'middleware' => ['auth']], function () {
+//     Route::get('/', [AdminHomeController::class, 'admin']);
+
+// });
+// Route::get('/admin', [AdminHomeController::class, 'admin']);
+
+// Route::prefix('admin')->group( function () {
+//     Route::resource('news', AdminNewsController::class);
+// });
+Route::middleware(['auth'])->prefix('admin')->group( function () {
+    Route::get('/', [App\Http\Controllers\Admin\AdminHomeController::class, 'admin'] );
+    Route::resource('news', AdminNewsController::class);
+    Route::resource('page', PageController::class);
+    Route::resource('tab', TabController::class);
+    Route::resource('media', MediaFileController::class);
+});

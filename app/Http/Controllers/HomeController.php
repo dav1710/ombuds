@@ -78,4 +78,40 @@ class HomeController extends Controller
     {
         return view('news');
     }
+	public function interviews()
+    {
+        return view('interviews');
+    }
+	public function posts()
+    {
+        return view('posts');
+    }
+	public function videos()
+    {
+        return view('videos');
+    }
+	public function success_stories()
+    {
+        return view('success_stories');
+    }
+	public function education_awareness()
+    {
+        return view('education_awareness');
+    }
+	public function membership()
+    {
+        return view('membership');
+    }
+	public function search()
+    {
+        return view('search');
+    }
+	public function program_collaboration()
+    {
+        return view('program_collaboration');
+    }
+	public function back_page() {
+		return redirect()->back();
+	}
 }
+

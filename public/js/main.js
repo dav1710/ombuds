@@ -9,7 +9,7 @@ var Markers = [
 
 if ($(window).width() <= 1270) {
 	var map = L.map('map_sm').setView([40.18615679287163, 44.5149837585256], 10);
-} 
+}
 else {
  	var map = L.map('map').setView([40.18615679287163, 44.5149837585256], 10);
 }
@@ -51,10 +51,24 @@ if(window.location.href.includes('#')) {
 		$('.opinion-tab').addClass('active');
 		$('#section6').addClass('show active');
 	}
-} 
+}
+
+
+//Styles
+if($('.nav-tabs').css('position') != 'fixed') {
+	$('.tab-content').css('padding-top', '0');
+}
+
+//Date
+let now = new Date();
+let day = ("0" + now.getDate()).slice(-2);
+let month = ("0" + (now.getMonth() + 1)).slice(-2);
+let today =  now.getFullYear()+"-"+(month)+"-"+(day);
+
+$('[name=date_end]').val(today);
 
 //Functions
-function dropDownFunction() {
+function dropDownFunction() { //unused function
   var x = document.getElementById("first");
   var rotated = document.getElementById('dropdown_rotate');
   if (x.style.display === "none") {
@@ -80,37 +94,26 @@ function hot_line_toggle() {
 }
 
 function negative() {
-	$('body').each(function () {
-		$(this).toggleClass('negative');
-	});
+	$('body').css({'filter': 'invert(1.1)','-webkit-filter': 'invert(1.1)'});
 }
 
 function black() {
-	$('body').each(function () {
-		$(this).toggleClass('black');
-	});
+	$('body').css({'filter': 'invert(100%) grayscale(100%)','-webkit-filter': 'invert(100%) grayscale(100%)'});
 }
 
 function gray() {
-	$('body').each(function () {
-		$(this).toggleClass('gray');
-	});
+	$('body').css({'filter': 'grayscale(1)','-webkit-filter': 'grayscale(1)'});
 }
 
-function zoom() {
-	$('body').each(function () {
-		$(this).toggleClass('zoom');
-	});
+function font_arial_armenian() {
+	$('*').attr('style', "font-family: arial-armenian !important");
 }
 
-function font_style() {
-	$('body').each(function () {
-		$(this).css('font-family', 'initial')
-	});
+function font_tahoma() {
+	$('*').attr('style', "font-family: tahoma !important");
 }
 
 function revert() {
-	$('body').each(function () {
-		$(this).removeClass('negative black gray zoom font_style');
-	});
+	$('body').css({'filter': 'none', '-webkit-filter': 'none'});
+	$('*').attr('style', "font-family: open-sans !important");
 }
